@@ -76,6 +76,7 @@ def load_promo_lookup() -> dict[str, list[dict]]:
 
 def resolve_promo_ext(name: str, ext_number: str, lookup: dict[str, list[dict]]) -> tuple[str, int]:
     cleaned = clean_card_name(name).lower()
+    has_suffix = name.strip() != clean_card_name(name)
     matches = lookup.get(cleaned, [])
     if not matches:
         print(f"  WARNING: no promo match for {cleaned!r}")
@@ -84,11 +85,18 @@ def resolve_promo_ext(name: str, ext_number: str, lookup: dict[str, list[dict]])
         ext_int = int(ext_number)
     except (ValueError, TypeError):
         return ext_number, 0
-    for m in matches:
-        if m["number"] == ext_int:
-            return f"{m['number']}/{m['promoGrouping']}", int(m["setCode"])
-    print(f"  WARNING: no number match for {cleaned!r} ext={ext_number}")
-    return ext_number, 0
+    number_matches = [m for m in matches if m["number"] == ext_int]
+    if not number_matches:
+        print(f"  WARNING: no number match for {cleaned!r} ext={ext_number}")
+        return ext_number, 0
+    if len(number_matches) == 1:
+        m = number_matches[0]
+        return f"{m['number']}/{m['promoGrouping']}", int(m["setCode"])
+    if has_suffix:
+        m = next((m for m in number_matches if m["promoGrouping"] != "P1"), number_matches[0])
+    else:
+        m = next((m for m in number_matches if m["promoGrouping"] == "P1"), number_matches[0])
+    return f"{m['number']}/{m['promoGrouping']}", int(m["setCode"])
 
 def clean_subtype(value: str) -> str:
     return re.sub(r"\bcold foil\b", "foil", value, flags=re.IGNORECASE).strip()
