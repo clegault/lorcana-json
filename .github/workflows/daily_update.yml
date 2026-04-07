@@ -1,0 +1,35 @@
+name: Daily Price Update
+
+on:
+  schedule:
+    # Runs at 20:15 UTC every day
+    - cron: '15 20 * * *'
+  workflow_dispatch: # Allows you to trigger it manually for testing
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Allows the bot to push the new file
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Run script
+        run: python getprices.py
+
+      - name: Commit and Push changes
+        run: |
+          git config --local user.email "github-actions[bot]@://github.com"
+          git config --local user.name "github-actions[bot]"
+          git add prices.json.gz
+          # Only commit if the file has changed to avoid errors
+          git commit -m "Auto-update prices: $(date -u)" || echo "No changes to commit"
+          git push
+
