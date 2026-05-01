@@ -47,9 +47,6 @@ PROMO_URLS = [
 
 PROMO_RARITIES = {"challenge24", "special", "top1"}
 
-# Rarities to exclude when picking a representative regular card for fallback
-ALTERNATE_RARITIES = {"enchanted", "epic"}
-
 KEEP_FIELDS = {"extNumber", "marketPrice", "url", "subTypeName"}
 
 
@@ -182,36 +179,10 @@ def load_promo_lookup() -> dict[tuple, list[dict]]:
     return lookup
 
 
-def load_regular_lookup() -> dict[tuple, list[dict]]:
-    """Fallback lookup for regular-set cards distributed as promos.
-
-    Keyed by (name, title). Excludes promo-set cards and alternate prints
-    (enchanted/epic) so the base card number is returned.
-    """
-    lookup: dict[tuple, list[dict]] = {}
-    for card in _load_cards():
-        sc = card.get("set_code", "")
-        rarity = card.get("rarity", "").lower()
-        if sc.startswith("p") or rarity in PROMO_RARITIES:
-            continue
-        sn = card.get("set_number")
-        num = card.get("number")
-        if not sn or not num:
-            continue
-        name, title = _card_en_name(card)
-        if not name:
-            continue
-        key = (name, title)
-        entry = {"number": num, "rarity": rarity, "setCode": sn}
-        lookup.setdefault(key, []).append(entry)
-    return lookup
-
-
 def resolve_promo_ext(
     name: str,
     ext_number: str,
     promo_lookup: dict[tuple, list[dict]],
-    regular_lookup: dict[tuple, list[dict]],
 ) -> tuple[str, int]:
     cleaned = clean_card_name(name).strip()
     parts = cleaned.split(" - ", 1)
@@ -226,20 +197,10 @@ def resolve_promo_ext(
         print(f"  WARNING: unparseable ext for {cleaned!r} ext={ext_number!r}")
         return ext_number, 0
 
-    # Primary: true promo card keyed by (name, title, promo_number)
     matches = promo_lookup.get((card_name, card_title, ext_int), [])
     if matches:
         m = matches[0]
         return f"{m['number']}/{m['rarity']}", m["setCode"]
-
-    # Fallback: regular set card distributed as a promo
-    candidates = regular_lookup.get((card_name, card_title), [])
-    if candidates:
-        base = [c for c in candidates if c["rarity"] not in ALTERNATE_RARITIES]
-        if not base:
-            base = candidates
-        m = min(base, key=lambda c: (c["setCode"], c["number"]))
-        return str(m["number"]), m["setCode"]
 
     print(f"  WARNING: no promo match for {cleaned!r} ext={ext_number}")
     return ext_number, 0
@@ -277,7 +238,6 @@ def process_url(url: str) -> list[dict]:
 def process_promo_url(
     url: str,
     promo_lookup: dict[tuple, list[dict]],
-    regular_lookup: dict[tuple, list[dict]],
 ) -> list[dict]:
     rows = fetch_csv(url)
     results = []
@@ -286,7 +246,7 @@ def process_promo_url(
         name = row.get("name", "")
         if not raw_ext:
             continue
-        ext_number, set_num = resolve_promo_ext(name, raw_ext, promo_lookup, regular_lookup)
+        ext_number, set_num = resolve_promo_ext(name, raw_ext, promo_lookup)
         if set_num == 0:
             continue
         record = {
@@ -311,12 +271,8 @@ def main():
     promo_lookup = load_promo_lookup()
     print(f"  -> {sum(len(v) for v in promo_lookup.values())} promo cards indexed")
 
-    print("Loading regular card fallback lookup...")
-    regular_lookup = load_regular_lookup()
-    print(f"  -> {sum(len(v) for v in regular_lookup.values())} regular cards indexed")
-
     for url in PROMO_URLS:
-        records = process_promo_url(url, promo_lookup, regular_lookup)
+        records = process_promo_url(url, promo_lookup)
         all_records.extend(records)
         print(f"  -> {len(records)} rows")
 
