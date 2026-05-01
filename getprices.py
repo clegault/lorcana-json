@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import csv
-import gzip
 import json
 import re
 import time
@@ -173,9 +172,9 @@ def main():
         print(f"  -> {len(records)} rows")
         time.sleep(0.25)
 
-    output_file = Path(__file__).parent / "prices.json.gz"
+    output_file = Path(__file__).parent / "prices.json"
 
-    with gzip.open(output_file, "wt", encoding="utf-8") as f:
+    with open(output_file, "w", encoding="utf-8") as f:
         json.dump(all_records, f, indent=2)
 
     print(f"\nDone! {len(all_records)} total records written to {output_file}")
