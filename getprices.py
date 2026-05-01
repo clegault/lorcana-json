@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 import csv
 import json
 import re
@@ -44,6 +45,11 @@ PROMO_URLS = [
     "https://tcgcsv.com/tcgplayer/71/23305/ProductsAndPrices.csv",
 ]
 
+PROMO_RARITIES = {"challenge24", "special", "top1"}
+
+# Rarities to exclude when picking a representative regular card for fallback
+ALTERNATE_RARITIES = {"enchanted", "epic"}
+
 KEEP_FIELDS = {"extNumber", "marketPrice", "url", "subTypeName"}
 
 
@@ -65,54 +71,178 @@ def clean_card_name(name: str) -> str:
     return re.sub(r"\s*\([^)]*\)\s*$", "", name).strip()
 
 
-def load_promo_lookup() -> dict[str, list[dict]]:
+def _load_cards() -> list[dict]:
     with zipfile.ZipFile(CARDS_FILE) as zf:
         with zf.open("lorcana_cards_update.json") as f:
             data = json.load(f)
-    cards = data["cards"] if isinstance(data, dict) else data
-    lookup: dict[str, list[dict]] = {}
+    return data["cards"] if isinstance(data, dict) else data
+
+
+def _normalize(s: str) -> str:
+    return s.replace("’", "'").replace("‘", "'").lower()
+
+
+def _card_en_name(card: dict) -> tuple[str, str]:
+    en = card.get("languages", {}).get("en", {})
+    return _normalize(en.get("name", "")), _normalize(en.get("title", "") or "")
+
+
+def _parse_ravensburger(card: dict) -> tuple[int | None, int]:
+    """Return (promo_card_number, set_number) from ravensburger.en.
+
+    '19/P2 EN 7'  -> (19, 7)
+    '8/D23 EN 8'  -> (8, 8)
+    '1TFC EN 2/P1' -> (None, 2)
+    ''             -> (None, 0)
+    """
+    en_str = card.get("ravensburger", {}).get("en", "") or ""
+    m = re.match(r"^(\d+)/\S+ EN (\d+)", en_str)
+    if m:
+        return int(m.group(1)), int(m.group(2))
+    m2 = re.search(r"\bEN (\d+)", en_str)
+    if m2:
+        return None, int(m2.group(1))
+    return None, 0
+
+
+def _parse_dreamborn_promo(card: dict) -> tuple[int | None, int | None]:
+    """Return (promo_card_number, set_number) for promo dreamborn entries.
+
+    '007-P2-019' -> (19, 7)
+    '001-P1-008' -> (8, 1)
+    'C1-005'     -> (5, None)
+    'D23-001'    -> (1, None)
+    '001-023'    -> (None, None)   regular card, ignored
+    """
+    db = card.get("dreamborn", "") or ""
+    m = re.match(r"^(\d{3})-[A-Z0-9]+-(\d+)$", db)
+    if m:
+        return int(m.group(2)), int(m.group(1))
+    m2 = re.match(r"^[A-Z][A-Z0-9]*-(\d+)$", db)
+    if m2:
+        return int(m2.group(1)), None
+    return None, None
+
+
+def load_promo_lookup() -> dict[tuple, list[dict]]:
+    cards = _load_cards()
+
+    # One-pass base-set lookup: (name, title) -> lowest set_number among regular cards.
+    # Used when a promo card has no set info in ravensburger.en or dreamborn.
+    base_set: dict[tuple, int] = {}
     for card in cards:
-        if "promoGrouping" not in card:
+        sc = card.get("set_code", "")
+        rarity = card.get("rarity", "").lower()
+        sn = card.get("set_number")
+        if not sn or sc.startswith("p") or rarity in PROMO_RARITIES:
             continue
-        full_name = card["fullName"].lower()
+        key = _card_en_name(card)
+        if key not in base_set or sn < base_set[key]:
+            base_set[key] = sn
+
+    lookup: dict[tuple, list[dict]] = {}
+    for card in cards:
+        set_code = card.get("set_code", "")
+        rarity = card.get("rarity", "").lower()
+        if not (set_code.startswith("p") or rarity in PROMO_RARITIES):
+            continue
+
+        promo_number, set_num = _parse_ravensburger(card)
+
+        if not set_num or promo_number is None:
+            db_promo, db_set = _parse_dreamborn_promo(card)
+            if not set_num and db_set:
+                set_num = db_set
+            if promo_number is None and db_promo is not None:
+                promo_number = db_promo
+
+        if not set_num:
+            name_key = _card_en_name(card)
+            set_num = base_set.get(name_key, 0)
+
+        if not set_num:
+            continue
+
+        if promo_number is None:
+            promo_number = card.get("set_number") or card.get("number")
+        if not promo_number:
+            continue
+
+        name, title = _card_en_name(card)
+        if not name:
+            continue
+
+        key = (name, title, promo_number)
         entry = {
-            "number": card["number"],
-            "promoGrouping": card["promoGrouping"],
-            "setCode": card.get("setCode", "0"),
+            "number": promo_number,
+            "rarity": rarity,
+            "setCode": set_num,
         }
-        lookup.setdefault(full_name, []).append(entry)
+        lookup.setdefault(key, []).append(entry)
+    return lookup
+
+
+def load_regular_lookup() -> dict[tuple, list[dict]]:
+    """Fallback lookup for regular-set cards distributed as promos.
+
+    Keyed by (name, title). Excludes promo-set cards and alternate prints
+    (enchanted/epic) so the base card number is returned.
+    """
+    lookup: dict[tuple, list[dict]] = {}
+    for card in _load_cards():
+        sc = card.get("set_code", "")
+        rarity = card.get("rarity", "").lower()
+        if sc.startswith("p") or rarity in PROMO_RARITIES:
+            continue
+        sn = card.get("set_number")
+        num = card.get("number")
+        if not sn or not num:
+            continue
+        name, title = _card_en_name(card)
+        if not name:
+            continue
+        key = (name, title)
+        entry = {"number": num, "rarity": rarity, "setCode": sn}
+        lookup.setdefault(key, []).append(entry)
     return lookup
 
 
 def resolve_promo_ext(
-    name: str, ext_number: str, lookup: dict[str, list[dict]]
+    name: str,
+    ext_number: str,
+    promo_lookup: dict[tuple, list[dict]],
+    regular_lookup: dict[tuple, list[dict]],
 ) -> tuple[str, int]:
-    cleaned = clean_card_name(name).lower()
-    has_suffix = name.strip() != clean_card_name(name)
-    matches = lookup.get(cleaned, [])
-    if not matches:
-        print(f"  WARNING: no promo match for {cleaned!r}")
-        return ext_number, 0
+    cleaned = clean_card_name(name).strip()
+    parts = cleaned.split(" - ", 1)
+    card_name = _normalize(parts[0].strip())
+    card_title = _normalize(parts[1].strip()) if len(parts) > 1 else ""
+
+    # Strip trailing letter suffix (e.g. '24A' -> 24, '24B' -> 24)
+    ext_clean = ext_number.rstrip("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz")
     try:
-        ext_int = int(ext_number)
+        ext_int = int(ext_clean)
     except (ValueError, TypeError):
+        print(f"  WARNING: unparseable ext for {cleaned!r} ext={ext_number!r}")
         return ext_number, 0
-    number_matches = [m for m in matches if m["number"] == ext_int]
-    if not number_matches:
-        print(f"  WARNING: no number match for {cleaned!r} ext={ext_number}")
-        return ext_number, 0
-    if len(number_matches) == 1:
-        m = number_matches[0]
-        return f"{m['number']}/{m['promoGrouping']}", int(m["setCode"])
-    if has_suffix:
-        m = next(
-            (m for m in number_matches if m["promoGrouping"] != "P1"), number_matches[0]
-        )
-    else:
-        m = next(
-            (m for m in number_matches if m["promoGrouping"] == "P1"), number_matches[0]
-        )
-    return f"{m['number']}/{m['promoGrouping']}", int(m["setCode"])
+
+    # Primary: true promo card keyed by (name, title, promo_number)
+    matches = promo_lookup.get((card_name, card_title, ext_int), [])
+    if matches:
+        m = matches[0]
+        return f"{m['number']}/{m['rarity']}", m["setCode"]
+
+    # Fallback: regular set card distributed as a promo
+    candidates = regular_lookup.get((card_name, card_title), [])
+    if candidates:
+        base = [c for c in candidates if c["rarity"] not in ALTERNATE_RARITIES]
+        if not base:
+            base = candidates
+        m = min(base, key=lambda c: (c["setCode"], c["number"]))
+        return str(m["number"]), m["setCode"]
+
+    print(f"  WARNING: no promo match for {cleaned!r} ext={ext_number}")
+    return ext_number, 0
 
 
 def clean_subtype(value: str) -> str:
@@ -144,7 +274,11 @@ def process_url(url: str) -> list[dict]:
     return results
 
 
-def process_promo_url(url: str, lookup: dict[str, list[dict]]) -> list[dict]:
+def process_promo_url(
+    url: str,
+    promo_lookup: dict[tuple, list[dict]],
+    regular_lookup: dict[tuple, list[dict]],
+) -> list[dict]:
     rows = fetch_csv(url)
     results = []
     for row in rows:
@@ -152,7 +286,7 @@ def process_promo_url(url: str, lookup: dict[str, list[dict]]) -> list[dict]:
         name = row.get("name", "")
         if not raw_ext:
             continue
-        ext_number, set_num = resolve_promo_ext(name, raw_ext, lookup)
+        ext_number, set_num = resolve_promo_ext(name, raw_ext, promo_lookup, regular_lookup)
         if set_num == 0:
             continue
         record = {
@@ -174,11 +308,15 @@ def main():
         print(f"  -> {len(records)} rows")
 
     print("\nLoading promo card lookup...")
-    lookup = load_promo_lookup()
-    print(f"  -> {sum(len(v) for v in lookup.values())} promo cards indexed")
+    promo_lookup = load_promo_lookup()
+    print(f"  -> {sum(len(v) for v in promo_lookup.values())} promo cards indexed")
+
+    print("Loading regular card fallback lookup...")
+    regular_lookup = load_regular_lookup()
+    print(f"  -> {sum(len(v) for v in regular_lookup.values())} regular cards indexed")
 
     for url in PROMO_URLS:
-        records = process_promo_url(url, lookup)
+        records = process_promo_url(url, promo_lookup, regular_lookup)
         all_records.extend(records)
         print(f"  -> {len(records)} rows")
 
