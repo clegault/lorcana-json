@@ -2,68 +2,93 @@
 import csv
 import json
 import re
-import time
+import urllib.request
 import zipfile
-import requests
+from datetime import date
 from io import StringIO
 from pathlib import Path
 
-LORCANA_CATEGORY = "71"
-
-# Maps tcgcsv group IDs to Lorcana set numbers. Add new entries here when new
-# sets appear — any group not listed will be auto-assigned the next set number.
 SET_MAP = {
-    22937: 1,
-    23303: 2,
-    23367: 3,
-    23474: 4,
-    23536: 5,
-    23746: 6,
-    24011: 7,
-    24258: 8,
-    24348: 9,
-    24414: 10,
-    24500: 11,
-    24617: 12,
-    24666: 13,
+    "22937": 1,
+    "23303": 2,
+    "23367": 3,
+    "23474": 4,
+    "23536": 5,
+    "23746": 6,
+    "24011": 7,
+    "24258": 8,
+    "24348": 9,
+    "24414": 10,
+    "24500": 11,
+    "24617": 12,
 }
 
-PROMO_GROUP_IDS = {17690, 23234, 23305}
+URLS = [
+    "https://tcgcsv.com/tcgplayer/71/22937/ProductsAndPrices.csv",
+    "https://tcgcsv.com/tcgplayer/71/23303/ProductsAndPrices.csv",
+    "https://tcgcsv.com/tcgplayer/71/23367/ProductsAndPrices.csv",
+    "https://tcgcsv.com/tcgplayer/71/23474/ProductsAndPrices.csv",
+    "https://tcgcsv.com/tcgplayer/71/23536/ProductsAndPrices.csv",
+    "https://tcgcsv.com/tcgplayer/71/23746/ProductsAndPrices.csv",
+    "https://tcgcsv.com/tcgplayer/71/24011/ProductsAndPrices.csv",
+    "https://tcgcsv.com/tcgplayer/71/24258/ProductsAndPrices.csv",
+    "https://tcgcsv.com/tcgplayer/71/24348/ProductsAndPrices.csv",
+    "https://tcgcsv.com/tcgplayer/71/24414/ProductsAndPrices.csv",
+    "https://tcgcsv.com/tcgplayer/71/24500/ProductsAndPrices.csv",
+    "https://tcgcsv.com/tcgplayer/71/24617/ProductsAndPrices.csv",
+]
 
-# Board game expansions and other non-card-set groups to skip
-EXCLUDED_GROUP_IDS = {23528, 24257}
+PROMO_URLS = [
+    "https://tcgcsv.com/tcgplayer/71/17690/ProductsAndPrices.csv",
+    "https://tcgcsv.com/tcgplayer/71/23234/ProductsAndPrices.csv",
+    "https://tcgcsv.com/tcgplayer/71/23305/ProductsAndPrices.csv",
+]
 
-session = requests.Session()
-session.headers.update({"User-Agent": "LorScana/1.0.0"})
+KEEP_FIELDS = {"extNumber", "marketPrice", "url", "subTypeName"}
+
+
+def get_set_id(url: str) -> int:
+    match = re.search(r"/(\d+)/ProductsAndPrices\.csv", url)
+    if match:
+        return SET_MAP.get(match.group(1), 0)
+    return 0
 
 
 CARDS_FILE = Path(__file__).parent / "lorcana_cards_update.json.zip"
 
+
 def clean_ext_number(value: str) -> str:
     return value.split("/")[0].strip() if "/" in value else value.strip()
+
 
 def clean_card_name(name: str) -> str:
     return re.sub(r"\s*\([^)]*\)\s*$", "", name).strip()
 
+
 def load_promo_lookup() -> dict[str, list[dict]]:
     with zipfile.ZipFile(CARDS_FILE) as zf:
-        fname = zf.namelist()[0]
-        with zf.open(fname) as f:
-            cards = json.load(f)
+        with zf.open("lorcana_cards_update.json") as f:
+            data = json.load(f)
+    cards = data["cards"] if isinstance(data, dict) else data
     lookup: dict[str, list[dict]] = {}
     for card in cards:
-        en = (card.get("languages") or {}).get("en") or {}
-        name_part = en.get("name", "")
-        title_part = en.get("title", "")
-        full_name = f"{name_part} - {title_part}".lower() if title_part else name_part.lower()
-        if not full_name:
+        if "promoGrouping" not in card:
             continue
-        entry = {"number": card["number"], "set_number": card["set_number"]}
+        full_name = card["fullName"].lower()
+        entry = {
+            "number": card["number"],
+            "promoGrouping": card["promoGrouping"],
+            "setCode": card.get("setCode", "0"),
+        }
         lookup.setdefault(full_name, []).append(entry)
     return lookup
 
-def resolve_promo_ext(name: str, ext_number: str, lookup: dict[str, list[dict]]) -> tuple[str, int]:
+
+def resolve_promo_ext(
+    name: str, ext_number: str, lookup: dict[str, list[dict]]
+) -> tuple[str, int]:
     cleaned = clean_card_name(name).lower()
+    has_suffix = name.strip() != clean_card_name(name)
     matches = lookup.get(cleaned, [])
     if not matches:
         print(f"  WARNING: no promo match for {cleaned!r}")
@@ -76,24 +101,35 @@ def resolve_promo_ext(name: str, ext_number: str, lookup: dict[str, list[dict]])
     if not number_matches:
         print(f"  WARNING: no number match for {cleaned!r} ext={ext_number}")
         return ext_number, 0
-    return ext_number, number_matches[0]["set_number"]
+    if len(number_matches) == 1:
+        m = number_matches[0]
+        return f"{m['number']}/{m['promoGrouping']}", int(m["setCode"])
+    if has_suffix:
+        m = next(
+            (m for m in number_matches if m["promoGrouping"] != "P1"), number_matches[0]
+        )
+    else:
+        m = next(
+            (m for m in number_matches if m["promoGrouping"] == "P1"), number_matches[0]
+        )
+    return f"{m['number']}/{m['promoGrouping']}", int(m["setCode"])
+
 
 def clean_subtype(value: str) -> str:
     return re.sub(r"\bcold foil\b", "foil", value, flags=re.IGNORECASE).strip()
 
-def fetch_groups() -> list[dict]:
-    r = session.get(f"https://tcgcsv.com/tcgplayer/{LORCANA_CATEGORY}/groups")
-    r.raise_for_status()
-    return r.json()["results"]
 
 def fetch_csv(url: str) -> list[dict]:
-    print(f"Fetching {url} ...")
-    r = session.get(url)
-    r.raise_for_status()
-    reader = csv.DictReader(StringIO(r.text))
+    print(f"Downloading {url} ...")
+    req = urllib.request.Request(url, headers={"User-Agent": "LorScana/1.0.0"})
+    with urllib.request.urlopen(req) as response:
+        content = response.read().decode("utf-8")
+    reader = csv.DictReader(StringIO(content))
     return list(reader)
 
-def process_url(url: str, set_num: int) -> list[dict]:
+
+def process_url(url: str) -> list[dict]:
+    set_num = get_set_id(url)
     rows = fetch_csv(url)
     results = []
     for row in rows:
@@ -106,6 +142,7 @@ def process_url(url: str, set_num: int) -> list[dict]:
         }
         results.append(record)
     return results
+
 
 def process_promo_url(url: str, lookup: dict[str, list[dict]]) -> list[dict]:
     rows = fetch_csv(url)
@@ -128,49 +165,22 @@ def process_promo_url(url: str, lookup: dict[str, list[dict]]) -> list[dict]:
         results.append(record)
     return results
 
+
 def main():
-    print("Fetching Lorcana groups from tcgcsv.com...")
-    groups = fetch_groups()
-    print(f"  -> {len(groups)} groups found")
-
-    # Sort by groupId so auto-assigned set numbers are stable across runs
-    groups.sort(key=lambda g: g["groupId"])
-
-    # Build a complete group_id -> set_num mapping, auto-assigning unknowns
-    next_set_num = max(SET_MAP.values(), default=0) + 1
-    group_set_map: dict[int, int] = {}
-    for group in groups:
-        gid = group["groupId"]
-        if gid in PROMO_GROUP_IDS or gid in EXCLUDED_GROUP_IDS:
-            continue
-        if gid in SET_MAP:
-            group_set_map[gid] = SET_MAP[gid]
-        else:
-            print(f"  New group detected: {gid} ({group.get('name', '?')}) -> set {next_set_num}")
-            group_set_map[gid] = next_set_num
-            next_set_num += 1
-
     all_records = []
-    for group in groups:
-        gid = group["groupId"]
-        if gid not in group_set_map:
-            continue
-        url = f"https://tcgcsv.com/tcgplayer/{LORCANA_CATEGORY}/{gid}/ProductsAndPrices.csv"
-        records = process_url(url, group_set_map[gid])
+    for url in URLS:
+        records = process_url(url)
         all_records.extend(records)
         print(f"  -> {len(records)} rows")
-        time.sleep(0.25)
 
     print("\nLoading promo card lookup...")
     lookup = load_promo_lookup()
     print(f"  -> {sum(len(v) for v in lookup.values())} promo cards indexed")
 
-    for gid in PROMO_GROUP_IDS:
-        url = f"https://tcgcsv.com/tcgplayer/{LORCANA_CATEGORY}/{gid}/ProductsAndPrices.csv"
+    for url in PROMO_URLS:
         records = process_promo_url(url, lookup)
         all_records.extend(records)
         print(f"  -> {len(records)} rows")
-        time.sleep(0.25)
 
     output_file = Path(__file__).parent / "prices.json"
 
@@ -178,6 +188,7 @@ def main():
         json.dump(all_records, f, indent=2)
 
     print(f"\nDone! {len(all_records)} total records written to {output_file}")
+
 
 if __name__ == "__main__":
     main()
