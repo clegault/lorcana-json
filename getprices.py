@@ -60,6 +60,20 @@ def get_set_id(url: str) -> int:
 CARDS_FILE = Path(__file__).parent / "lorcana_cards_update.json.zip"
 
 
+_DREAMBORN_PROMO_RE = re.compile(r"^\d{3}-[A-Z][A-Z0-9]*-\d+$")
+
+
+def _is_promo_card(card: dict) -> bool:
+    set_code = card.get("set_code") or ""
+    rarity = (card.get("rarity") or "").lower()
+    if set_code.startswith("p") or rarity in PROMO_RARITIES:
+        return True
+    if card.get("special_rarity_id") == "PROMO":
+        return True
+    db = card.get("dreamborn", "") or ""
+    return bool(_DREAMBORN_PROMO_RE.match(db))
+
+
 def clean_ext_number(value: str) -> str:
     return value.split("/")[0].strip() if "/" in value else value.strip()
 
@@ -87,13 +101,14 @@ def _card_en_name(card: dict) -> tuple[str, str]:
 def _parse_ravensburger(card: dict) -> tuple[int | None, int]:
     """Return (promo_card_number, set_number) from ravensburger.en.
 
-    '19/P2 EN 7'  -> (19, 7)
-    '8/D23 EN 8'  -> (8, 8)
+    '19/P2 EN 7'   -> (19, 7)
+    '8/D23 EN 8'   -> (8, 8)
+    '24A/P2 EN 7'  -> (24, 7)
     '1TFC EN 2/P1' -> (None, 2)
     ''             -> (None, 0)
     """
     en_str = card.get("ravensburger", {}).get("en", "") or ""
-    m = re.match(r"^(\d+)/\S+ EN (\d+)", en_str)
+    m = re.match(r"^(\d+)[A-Z]*/\S+ EN (\d+)", en_str)
     if m:
         return int(m.group(1)), int(m.group(2))
     m2 = re.search(r"\bEN (\d+)", en_str)
@@ -128,10 +143,8 @@ def load_promo_lookup() -> dict[tuple, list[dict]]:
     # Used when a promo card has no set info in ravensburger.en or dreamborn.
     base_set: dict[tuple, int] = {}
     for card in cards:
-        sc = card.get("set_code", "")
-        rarity = card.get("rarity", "").lower()
         sn = card.get("set_number")
-        if not sn or sc.startswith("p") or rarity in PROMO_RARITIES:
+        if not sn or _is_promo_card(card):
             continue
         key = _card_en_name(card)
         if key not in base_set or sn < base_set[key]:
@@ -139,10 +152,9 @@ def load_promo_lookup() -> dict[tuple, list[dict]]:
 
     lookup: dict[tuple, list[dict]] = {}
     for card in cards:
-        set_code = card.get("set_code", "")
-        rarity = card.get("rarity", "").lower()
-        if not (set_code.startswith("p") or rarity in PROMO_RARITIES):
+        if not _is_promo_card(card):
             continue
+        rarity = (card.get("rarity") or "").lower()
 
         promo_number, set_num = _parse_ravensburger(card)
 
@@ -169,7 +181,7 @@ def load_promo_lookup() -> dict[tuple, list[dict]]:
         if not name:
             continue
 
-        key = (name, title, promo_number)
+        key = (name, title)
         entry = {
             "number": promo_number,
             "rarity": rarity,
@@ -197,7 +209,7 @@ def resolve_promo_ext(
         print(f"  WARNING: unparseable ext for {cleaned!r} ext={ext_number!r}")
         return ext_number, 0
 
-    matches = promo_lookup.get((card_name, card_title, ext_int), [])
+    matches = promo_lookup.get((card_name, card_title), [])
     if matches:
         m = matches[0]
         return f"{m['number']}/{m['rarity']}", m["setCode"]
