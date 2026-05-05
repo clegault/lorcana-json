@@ -208,7 +208,7 @@ def resolve_promo_ext(
     ext_number: str,
     promo_lookup: dict[tuple, list[dict]],
     reverse_lookup: dict[tuple, set],
-) -> tuple[str, int]:
+) -> tuple[str, int, str]:
     cleaned = clean_card_name(name).strip()
     parts = cleaned.split(" - ", 1)
     card_name = _normalize(parts[0].strip())
@@ -220,7 +220,7 @@ def resolve_promo_ext(
         ext_int = int(ext_clean)
     except (ValueError, TypeError):
         print(f"  WARNING: unparseable ext for {cleaned!r} ext={ext_number!r}")
-        return ext_number, 0
+        return ext_number, 0, ""
 
     matches = promo_lookup.get((card_name, card_title), [])
     if matches:
@@ -239,12 +239,10 @@ def resolve_promo_ext(
             other_strs = [f"{n} - {t}" for n, t in sorted(others)]
             print(f"  WARNING: promo number collision for {cleaned!r} → set={m['setCode']} number={m['number']} also used by {other_strs}")
 
-        promo_code = m.get("promoCode", "")
-        ext_out = f"{m['number']}/{promo_code}/{m['rarity']}" if promo_code else f"{m['number']}/{m['rarity']}"
-        return ext_out, m["setCode"]
+        return f"{m['number']}/{m['rarity']}", m["setCode"], m.get("promoCode", "")
 
     print(f"  WARNING: no promo match for {cleaned!r} ext={ext_number}")
-    return ext_number, 0
+    return ext_number, 0, ""
 
 
 def clean_subtype(value: str) -> str:
@@ -288,7 +286,7 @@ def process_promo_url(
         name = row.get("name", "")
         if not raw_ext:
             continue
-        ext_number, set_num = resolve_promo_ext(name, raw_ext, promo_lookup, reverse_lookup)
+        ext_number, set_num, promo_code = resolve_promo_ext(name, raw_ext, promo_lookup, reverse_lookup)
         if set_num == 0:
             continue
         record = {
@@ -298,6 +296,8 @@ def process_promo_url(
             "url": row.get("url", ""),
             "subTypeName": clean_subtype(row.get("subTypeName", "")),
         }
+        if promo_code:
+            record["promoCode"] = promo_code
         results.append(record)
     return results
 

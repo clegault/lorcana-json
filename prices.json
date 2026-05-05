@@ -37612,549 +37612,627 @@
   },
   {
     "set": 4,
-    "extNumber": "4/P1/special",
+    "extNumber": "4/special",
     "marketPrice": "600.0",
     "url": "https://cpt.tcgcsv.com/CJF5",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P1"
   },
   {
     "set": 3,
-    "extNumber": "3/P1/special",
+    "extNumber": "3/special",
     "marketPrice": "1250.0",
     "url": "https://cpt.tcgcsv.com/DJF5",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P1"
   },
   {
     "set": 7,
-    "extNumber": "7/P1/special",
+    "extNumber": "7/special",
     "marketPrice": "867.66",
     "url": "https://cpt.tcgcsv.com/FJF5",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P1"
   },
   {
     "set": 9,
-    "extNumber": "5/P3/enchanted",
+    "extNumber": "5/enchanted",
     "marketPrice": "800.0",
     "url": "https://cpt.tcgcsv.com/GJF5",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P3"
   },
   {
     "set": 1,
-    "extNumber": "1/P1/special",
+    "extNumber": "1/special",
     "marketPrice": "679.42",
     "url": "https://cpt.tcgcsv.com/HJF5",
-    "subTypeName": "Normal"
+    "subTypeName": "Normal",
+    "promoCode": "P1"
   },
   {
     "set": 6,
-    "extNumber": "6/P1/special",
+    "extNumber": "6/special",
     "marketPrice": "775.0",
     "url": "https://cpt.tcgcsv.com/JJF5",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P1"
   },
   {
     "set": 2,
-    "extNumber": "2/P1/special",
+    "extNumber": "2/special",
     "marketPrice": "620.0",
     "url": "https://cpt.tcgcsv.com/WJF5",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P1"
   },
   {
     "set": 1,
-    "extNumber": "1/P1/special",
+    "extNumber": "1/special",
     "marketPrice": "89.22",
     "url": "https://cpt.tcgcsv.com/GQt6",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P1"
   },
   {
     "set": 2,
-    "extNumber": "2/D23/special",
+    "extNumber": "2/special",
     "marketPrice": "26.55",
     "url": "https://cpt.tcgcsv.com/HQt6",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "D23"
   },
   {
     "set": 3,
-    "extNumber": "3/D23/special",
+    "extNumber": "3/special",
     "marketPrice": "44.82",
     "url": "https://cpt.tcgcsv.com/JQt6",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "D23"
   },
   {
     "set": 4,
-    "extNumber": "4/D23/special",
+    "extNumber": "4/special",
     "marketPrice": "17.32",
     "url": "https://cpt.tcgcsv.com/KQt6",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "D23"
   },
   {
     "set": 5,
-    "extNumber": "5/D23/special",
+    "extNumber": "5/special",
     "marketPrice": "30.36",
     "url": "https://cpt.tcgcsv.com/MQt6",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "D23"
   },
   {
     "set": 6,
-    "extNumber": "6/D23/special",
+    "extNumber": "6/special",
     "marketPrice": "36.08",
     "url": "https://cpt.tcgcsv.com/NQt6",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "D23"
   },
   {
     "set": 4,
-    "extNumber": "7/D23/special",
+    "extNumber": "7/special",
     "marketPrice": "67.24",
     "url": "https://cpt.tcgcsv.com/jRt6",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "D23"
   },
   {
     "set": 8,
-    "extNumber": "8/D23/special",
+    "extNumber": "8/special",
     "marketPrice": "27.95",
     "url": "https://cpt.tcgcsv.com/L237",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "D23"
   },
   {
     "set": 7,
-    "extNumber": "16/D23/special",
+    "extNumber": "16/special",
     "marketPrice": "52.47",
     "url": "https://cpt.tcgcsv.com/kRr7",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "D23"
   },
   {
     "set": 1,
-    "extNumber": "8/P1/special",
+    "extNumber": "8/special",
     "marketPrice": "8.85",
     "url": "https://cpt.tcgcsv.com/tK06",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P1"
   },
   {
     "set": 1,
-    "extNumber": "12/P1/special",
+    "extNumber": "12/special",
     "marketPrice": "67.18",
     "url": "https://cpt.tcgcsv.com/zK06",
-    "subTypeName": "Normal"
+    "subTypeName": "Normal",
+    "promoCode": "P1"
   },
   {
     "set": 1,
-    "extNumber": "9/P1/special",
+    "extNumber": "9/special",
     "marketPrice": "2.12",
     "url": "https://cpt.tcgcsv.com/gQ06",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P1"
   },
   {
     "set": 1,
-    "extNumber": "10/P1/special",
+    "extNumber": "10/special",
     "marketPrice": "0.99",
     "url": "https://cpt.tcgcsv.com/hQ06",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P1"
   },
   {
     "set": 1,
-    "extNumber": "11/P1/special",
+    "extNumber": "11/special",
     "marketPrice": "46.87",
     "url": "https://cpt.tcgcsv.com/_366",
-    "subTypeName": "Normal"
+    "subTypeName": "Normal",
+    "promoCode": "P1"
   },
   {
     "set": 2,
-    "extNumber": "14/P1/special",
+    "extNumber": "14/special",
     "marketPrice": "0.52",
     "url": "https://cpt.tcgcsv.com/bn96",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P1"
   },
   {
     "set": 2,
-    "extNumber": "15/P1/special",
+    "extNumber": "15/special",
     "marketPrice": "0.82",
     "url": "https://cpt.tcgcsv.com/fn96",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P1"
   },
   {
     "set": 2,
-    "extNumber": "16/P1/special",
+    "extNumber": "16/special",
     "marketPrice": "0.91",
     "url": "https://cpt.tcgcsv.com/gn96",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P1"
   },
   {
     "set": 2,
-    "extNumber": "17/P1/special",
+    "extNumber": "17/special",
     "marketPrice": "0.89",
     "url": "https://cpt.tcgcsv.com/hn96",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P1"
   },
   {
     "set": 1,
-    "extNumber": "13/P1/special",
+    "extNumber": "13/special",
     "marketPrice": "69.64",
     "url": "https://cpt.tcgcsv.com/Wz96",
-    "subTypeName": "Normal"
+    "subTypeName": "Normal",
+    "promoCode": "P1"
   },
   {
     "set": 1,
-    "extNumber": "24/P1/special",
+    "extNumber": "24/special",
     "marketPrice": "37.8",
     "url": "https://cpt.tcgcsv.com/9mb6",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P1"
   },
   {
     "set": 2,
-    "extNumber": "32/P1/special",
+    "extNumber": "32/special",
     "marketPrice": "17.89",
     "url": "https://cpt.tcgcsv.com/T2d6",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P1"
   },
   {
     "set": 2,
-    "extNumber": "31/P1/special",
+    "extNumber": "31/special",
     "marketPrice": "13.34",
     "url": "https://cpt.tcgcsv.com/W2d6",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P1"
   },
   {
     "set": 2,
-    "extNumber": "33/P1/special",
+    "extNumber": "33/special",
     "marketPrice": "11.45",
     "url": "https://cpt.tcgcsv.com/X2d6",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P1"
   },
   {
     "set": 3,
-    "extNumber": "30/P1/enchanted",
+    "extNumber": "30/enchanted",
     "marketPrice": "188.41",
     "url": "https://cpt.tcgcsv.com/Znh6",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P1"
   },
   {
     "set": 3,
-    "extNumber": "39/P1/special",
+    "extNumber": "39/special",
     "marketPrice": "6.91",
     "url": "https://cpt.tcgcsv.com/Zjk6",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P1"
   },
   {
     "set": 3,
-    "extNumber": "28/P1/special",
+    "extNumber": "28/special",
     "marketPrice": "0.82",
     "url": "https://cpt.tcgcsv.com/_jk6",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P1"
   },
   {
     "set": 3,
-    "extNumber": "29/P1/special",
+    "extNumber": "29/special",
     "marketPrice": "1.0",
     "url": "https://cpt.tcgcsv.com/jkk6",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P1"
   },
   {
     "set": 3,
-    "extNumber": "26/P1/special",
+    "extNumber": "26/special",
     "marketPrice": "0.61",
     "url": "https://cpt.tcgcsv.com/kkk6",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P1"
   },
   {
     "set": 3,
-    "extNumber": "27/P1/special",
+    "extNumber": "27/special",
     "marketPrice": "0.58",
     "url": "https://cpt.tcgcsv.com/wkk6",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P1"
   },
   {
     "set": 1,
-    "extNumber": "1/C1/special",
+    "extNumber": "1/special",
     "marketPrice": "43.81",
     "url": "https://cpt.tcgcsv.com/-Pm6",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "C1"
   },
   {
     "set": 1,
-    "extNumber": "2/C1/special",
+    "extNumber": "2/special",
     "marketPrice": "958.35",
     "url": "https://cpt.tcgcsv.com/2Qm6",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "C1"
   },
   {
     "set": 2,
-    "extNumber": "3/C1/special",
+    "extNumber": "3/special",
     "marketPrice": "775.95",
     "url": "https://cpt.tcgcsv.com/3Qm6",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "C1"
   },
   {
     "set": 2,
-    "extNumber": "3/C1/special",
+    "extNumber": "3/special",
     "marketPrice": "59.92",
     "url": "https://cpt.tcgcsv.com/3Qm6",
-    "subTypeName": "Normal"
+    "subTypeName": "Normal",
+    "promoCode": "C1"
   },
   {
     "set": 1,
-    "extNumber": "4/C1/special",
+    "extNumber": "4/special",
     "marketPrice": "74.31",
     "url": "https://cpt.tcgcsv.com/5Qm6",
-    "subTypeName": "Normal"
+    "subTypeName": "Normal",
+    "promoCode": "C1"
   },
   {
     "set": 1,
-    "extNumber": "4/C1/special",
+    "extNumber": "4/special",
     "marketPrice": "2700.0",
     "url": "https://cpt.tcgcsv.com/5Qm6",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "C1"
   },
   {
     "set": 4,
-    "extNumber": "40/P1/special",
+    "extNumber": "40/special",
     "marketPrice": "3.17",
     "url": "https://cpt.tcgcsv.com/THq6",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P1"
   },
   {
     "set": 4,
-    "extNumber": "34/P1/special",
+    "extNumber": "34/special",
     "marketPrice": "0.89",
     "url": "https://cpt.tcgcsv.com/WHq6",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P1"
   },
   {
     "set": 4,
-    "extNumber": "35/P1/special",
+    "extNumber": "35/special",
     "marketPrice": "0.55",
     "url": "https://cpt.tcgcsv.com/XHq6",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P1"
   },
   {
     "set": 4,
-    "extNumber": "36/P1/special",
+    "extNumber": "36/special",
     "marketPrice": "0.4",
     "url": "https://cpt.tcgcsv.com/ZHq6",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P1"
   },
   {
     "set": 4,
-    "extNumber": "37/P1/special",
+    "extNumber": "37/special",
     "marketPrice": "0.55",
     "url": "https://cpt.tcgcsv.com/-Hq6",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P1"
   },
   {
     "set": 4,
-    "extNumber": "38/P1/enchanted",
+    "extNumber": "38/enchanted",
     "marketPrice": "64.05",
     "url": "https://cpt.tcgcsv.com/_Hq6",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P1"
   },
   {
     "set": 1,
-    "extNumber": "1/P1/special",
+    "extNumber": "1/special",
     "marketPrice": "",
     "url": "https://cpt.tcgcsv.com/BSr6",
-    "subTypeName": ""
+    "subTypeName": "",
+    "promoCode": "P1"
   },
   {
     "set": 5,
-    "extNumber": "2/P2/special",
+    "extNumber": "2/special",
     "marketPrice": "5.27",
     "url": "https://cpt.tcgcsv.com/Phs6",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P2"
   },
   {
     "set": 5,
-    "extNumber": "1/P2/special",
+    "extNumber": "1/special",
     "marketPrice": "9.44",
     "url": "https://cpt.tcgcsv.com/KBs6",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P2"
   },
   {
     "set": 5,
-    "extNumber": "7/P2/enchanted",
+    "extNumber": "7/enchanted",
     "marketPrice": "31.73",
     "url": "https://cpt.tcgcsv.com/dvv6",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P2"
   },
   {
     "set": 5,
-    "extNumber": "3/P2/special",
+    "extNumber": "3/special",
     "marketPrice": "0.43",
     "url": "https://cpt.tcgcsv.com/XPv6",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P2"
   },
   {
     "set": 5,
-    "extNumber": "4/P2/special",
+    "extNumber": "4/special",
     "marketPrice": "0.9",
     "url": "https://cpt.tcgcsv.com/ZPv6",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P2"
   },
   {
     "set": 5,
-    "extNumber": "5/P2/special",
+    "extNumber": "5/special",
     "marketPrice": "0.61",
     "url": "https://cpt.tcgcsv.com/-Pv6",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P2"
   },
   {
     "set": 5,
-    "extNumber": "6/P2/special",
+    "extNumber": "6/special",
     "marketPrice": "0.94",
     "url": "https://cpt.tcgcsv.com/_Pv6",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P2"
   },
   {
     "set": 6,
-    "extNumber": "8/P2/special",
+    "extNumber": "8/special",
     "marketPrice": "2.43",
     "url": "https://cpt.tcgcsv.com/LjF6",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P2"
   },
   {
     "set": 6,
-    "extNumber": "9/P2/special",
+    "extNumber": "9/special",
     "marketPrice": "9.35",
     "url": "https://cpt.tcgcsv.com/xfK6",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P2"
   },
   {
     "set": 1,
-    "extNumber": "10/P3/special",
+    "extNumber": "10/special",
     "marketPrice": "",
     "url": "https://cpt.tcgcsv.com/tgK6",
-    "subTypeName": ""
+    "subTypeName": "",
+    "promoCode": "P3"
   },
   {
     "set": 1,
-    "extNumber": "10/P3/special",
+    "extNumber": "10/special",
     "marketPrice": "",
     "url": "https://cpt.tcgcsv.com/vgK6",
-    "subTypeName": ""
+    "subTypeName": "",
+    "promoCode": "P3"
   },
   {
     "set": 6,
-    "extNumber": "11/P2/special",
+    "extNumber": "11/special",
     "marketPrice": "0.49",
     "url": "https://cpt.tcgcsv.com/HxM6",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P2"
   },
   {
     "set": 6,
-    "extNumber": "12/P2/special",
+    "extNumber": "12/special",
     "marketPrice": "0.66",
     "url": "https://cpt.tcgcsv.com/JxM6",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P2"
   },
   {
     "set": 6,
-    "extNumber": "13/P2/special",
+    "extNumber": "13/special",
     "marketPrice": "0.43",
     "url": "https://cpt.tcgcsv.com/KxM6",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P2"
   },
   {
     "set": 6,
-    "extNumber": "10/P2/special",
+    "extNumber": "10/special",
     "marketPrice": "0.37",
     "url": "https://cpt.tcgcsv.com/LxM6",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P2"
   },
   {
     "set": 6,
-    "extNumber": "14/P2/enchanted",
+    "extNumber": "14/enchanted",
     "marketPrice": "35.1",
     "url": "https://cpt.tcgcsv.com/MxM6",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P2"
   },
   {
     "set": 1,
-    "extNumber": "8/C1/special",
+    "extNumber": "8/special",
     "marketPrice": "29.15",
     "url": "https://cpt.tcgcsv.com/NbN6",
-    "subTypeName": "Normal"
+    "subTypeName": "Normal",
+    "promoCode": "C1"
   },
   {
     "set": 6,
-    "extNumber": "9/C1/special",
+    "extNumber": "9/special",
     "marketPrice": "",
     "url": "https://cpt.tcgcsv.com/PbN6",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "C1"
   },
   {
     "set": 6,
-    "extNumber": "9/C1/special",
+    "extNumber": "9/special",
     "marketPrice": "49.22",
     "url": "https://cpt.tcgcsv.com/PbN6",
-    "subTypeName": "Normal"
+    "subTypeName": "Normal",
+    "promoCode": "C1"
   },
   {
     "set": 5,
-    "extNumber": "6/C1/special",
+    "extNumber": "6/special",
     "marketPrice": "",
     "url": "https://cpt.tcgcsv.com/QbN6",
-    "subTypeName": ""
+    "subTypeName": "",
+    "promoCode": "C1"
   },
   {
     "set": 5,
-    "extNumber": "7/C1/special",
+    "extNumber": "7/special",
     "marketPrice": "",
     "url": "https://cpt.tcgcsv.com/RbN6",
-    "subTypeName": ""
+    "subTypeName": "",
+    "promoCode": "C1"
   },
   {
     "set": 7,
-    "extNumber": "26/P2/special",
+    "extNumber": "26/special",
     "marketPrice": "1.9",
     "url": "https://cpt.tcgcsv.com/gsQ6",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P2"
   },
   {
     "set": 6,
-    "extNumber": "18/P2/special",
+    "extNumber": "18/special",
     "marketPrice": "8.63",
     "url": "https://cpt.tcgcsv.com/_GW6",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P2"
   },
   {
     "set": 1,
-    "extNumber": "10/P3/special",
+    "extNumber": "10/special",
     "marketPrice": "40.13",
     "url": "https://cpt.tcgcsv.com/tzX6",
-    "subTypeName": "Normal"
+    "subTypeName": "Normal",
+    "promoCode": "P3"
   },
   {
     "set": 6,
-    "extNumber": "25/P2/special",
+    "extNumber": "25/special",
     "marketPrice": "5.29",
     "url": "https://cpt.tcgcsv.com/7MZ6",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P2"
   },
   {
     "set": 7,
-    "extNumber": "20/P2/special",
+    "extNumber": "20/special",
     "marketPrice": "0.51",
     "url": "https://cpt.tcgcsv.com/S6-6",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P2"
   },
   {
     "set": 7,
-    "extNumber": "21/P2/special",
+    "extNumber": "21/special",
     "marketPrice": "0.67",
     "url": "https://cpt.tcgcsv.com/T6-6",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P2"
   },
   {
     "set": 7,
-    "extNumber": "22/P2/special",
+    "extNumber": "22/special",
     "marketPrice": "0.58",
     "url": "https://cpt.tcgcsv.com/s7-6",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P2"
   },
   {
     "set": 7,
-    "extNumber": "23/P2/special",
+    "extNumber": "23/special",
     "marketPrice": "0.89",
     "url": "https://cpt.tcgcsv.com/v7-6",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P2"
   },
   {
     "set": 7,
@@ -38172,492 +38250,562 @@
   },
   {
     "set": 7,
-    "extNumber": "19/P2/special",
+    "extNumber": "19/special",
     "marketPrice": "10.69",
     "url": "https://cpt.tcgcsv.com/Wb_6",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P2"
   },
   {
     "set": 8,
-    "extNumber": "32/P2/special",
+    "extNumber": "32/special",
     "marketPrice": "0.67",
     "url": "https://cpt.tcgcsv.com/dK57",
-    "subTypeName": "Normal"
+    "subTypeName": "Normal",
+    "promoCode": "P2"
   },
   {
     "set": 8,
-    "extNumber": "33/P2/enchanted",
+    "extNumber": "33/enchanted",
     "marketPrice": "24.63",
     "url": "https://cpt.tcgcsv.com/fK57",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P2"
   },
   {
     "set": 8,
-    "extNumber": "31/P2/special",
+    "extNumber": "31/special",
     "marketPrice": "0.34",
     "url": "https://cpt.tcgcsv.com/K377",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P2"
   },
   {
     "set": 8,
-    "extNumber": "28/P2/special",
+    "extNumber": "28/special",
     "marketPrice": "1.41",
     "url": "https://cpt.tcgcsv.com/Qd77",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P2"
   },
   {
     "set": 8,
-    "extNumber": "29/P2/special",
+    "extNumber": "29/special",
     "marketPrice": "0.45",
     "url": "https://cpt.tcgcsv.com/sg97",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P2"
   },
   {
     "set": 8,
-    "extNumber": "35/P2/special",
+    "extNumber": "35/special",
     "marketPrice": "0.84",
     "url": "https://cpt.tcgcsv.com/NX97",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P2"
   },
   {
     "set": 8,
-    "extNumber": "30/P2/special",
+    "extNumber": "30/special",
     "marketPrice": "0.55",
     "url": "https://cpt.tcgcsv.com/SRb7",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P2"
   },
   {
     "set": 4,
-    "extNumber": "41/P3/special",
+    "extNumber": "41/special",
     "marketPrice": "29.31",
     "url": "https://cpt.tcgcsv.com/-2c7",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P3"
   },
   {
     "set": 10,
-    "extNumber": "25/P3/special",
+    "extNumber": "25/special",
     "marketPrice": "7.91",
     "url": "https://cpt.tcgcsv.com/jkc7",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P3"
   },
   {
     "set": 8,
-    "extNumber": "27/P2/special",
+    "extNumber": "27/special",
     "marketPrice": "6.48",
     "url": "https://cpt.tcgcsv.com/kkc7",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P2"
   },
   {
     "set": 9,
-    "extNumber": "2/P3/special",
+    "extNumber": "2/special",
     "marketPrice": "0.93",
     "url": "https://cpt.tcgcsv.com/0pc7",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P3"
   },
   {
     "set": 9,
-    "extNumber": "3/P3/special",
+    "extNumber": "3/special",
     "marketPrice": "0.3",
     "url": "https://cpt.tcgcsv.com/8pc7",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P3"
   },
   {
     "set": 8,
-    "extNumber": "34/P2/special",
+    "extNumber": "34/special",
     "marketPrice": "2.13",
     "url": "https://cpt.tcgcsv.com/0sc7",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P2"
   },
   {
     "set": 9,
-    "extNumber": "1/P3/special",
+    "extNumber": "1/special",
     "marketPrice": "49.26",
     "url": "https://cpt.tcgcsv.com/z5d7",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P3"
   },
   {
     "set": 9,
-    "extNumber": "4/P3/special",
+    "extNumber": "4/special",
     "marketPrice": "0.74",
     "url": "https://cpt.tcgcsv.com/C5d7",
-    "subTypeName": "Normal"
+    "subTypeName": "Normal",
+    "promoCode": "P3"
   },
   {
     "set": 9,
-    "extNumber": "5/P3/enchanted",
+    "extNumber": "5/enchanted",
     "marketPrice": "53.88",
     "url": "https://cpt.tcgcsv.com/M5d7",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P3"
   },
   {
     "set": 5,
-    "extNumber": "6/P3/special",
+    "extNumber": "6/special",
     "marketPrice": "3.4",
     "url": "https://cpt.tcgcsv.com/P5d7",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P3"
   },
   {
     "set": 9,
-    "extNumber": "7/P3/special",
+    "extNumber": "7/special",
     "marketPrice": "0.82",
     "url": "https://cpt.tcgcsv.com/S5d7",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P3"
   },
   {
     "set": 9,
-    "extNumber": "8/P3/special",
+    "extNumber": "8/special",
     "marketPrice": "2.61",
     "url": "https://cpt.tcgcsv.com/W5d7",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P3"
   },
   {
     "set": 9,
-    "extNumber": "9/P3/special",
+    "extNumber": "9/special",
     "marketPrice": "0.55",
     "url": "https://cpt.tcgcsv.com/X5d7",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P3"
   },
   {
     "set": 9,
-    "extNumber": "11/P3/special",
+    "extNumber": "11/special",
     "marketPrice": "4.53",
     "url": "https://cpt.tcgcsv.com/66d7",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P3"
   },
   {
     "set": 1,
-    "extNumber": "10/P3/special",
+    "extNumber": "10/special",
     "marketPrice": "870.0",
     "url": "https://cpt.tcgcsv.com/96d7",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P3"
   },
   {
     "set": 6,
-    "extNumber": "13/P3/special",
+    "extNumber": "13/special",
     "marketPrice": "45.13",
     "url": "https://cpt.tcgcsv.com/b6d7",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P3"
   },
   {
     "set": 6,
-    "extNumber": "14/P3/special",
+    "extNumber": "14/special",
     "marketPrice": "",
     "url": "https://cpt.tcgcsv.com/c6d7",
-    "subTypeName": ""
+    "subTypeName": "",
+    "promoCode": "P3"
   },
   {
     "set": 4,
-    "extNumber": "15/P3/special",
+    "extNumber": "15/special",
     "marketPrice": "",
     "url": "https://cpt.tcgcsv.com/f6d7",
-    "subTypeName": ""
+    "subTypeName": "",
+    "promoCode": "P3"
   },
   {
     "set": 6,
-    "extNumber": "16/P3/special",
+    "extNumber": "16/special",
     "marketPrice": "74.17",
     "url": "https://cpt.tcgcsv.com/h6d7",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P3"
   },
   {
     "set": 6,
-    "extNumber": "17/P3/special",
+    "extNumber": "17/special",
     "marketPrice": "338.42",
     "url": "https://cpt.tcgcsv.com/k6d7",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P3"
   },
   {
     "set": 7,
-    "extNumber": "37/P3/special",
+    "extNumber": "37/special",
     "marketPrice": "49.91",
     "url": "https://cpt.tcgcsv.com/Rzd7",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P3"
   },
   {
     "set": 9,
-    "extNumber": "40/P3/special",
+    "extNumber": "40/special",
     "marketPrice": "13.2",
     "url": "https://cpt.tcgcsv.com/Tzd7",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P3"
   },
   {
     "set": 1,
-    "extNumber": "10/P3/special",
+    "extNumber": "10/special",
     "marketPrice": "15.28",
     "url": "https://cpt.tcgcsv.com/8Bf7",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P3"
   },
   {
     "set": 1,
-    "extNumber": "10/C1/special",
+    "extNumber": "10/special",
     "marketPrice": "11.32",
     "url": "https://cpt.tcgcsv.com/WRf7",
-    "subTypeName": "Normal"
+    "subTypeName": "Normal",
+    "promoCode": "C1"
   },
   {
     "set": 8,
-    "extNumber": "3/C2/special",
+    "extNumber": "3/special",
     "marketPrice": "54.14",
     "url": "https://cpt.tcgcsv.com/dpg7",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "C2"
   },
   {
     "set": 9,
-    "extNumber": "1/C2/special",
+    "extNumber": "1/special",
     "marketPrice": "62.8",
     "url": "https://cpt.tcgcsv.com/fpg7",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "C2"
   },
   {
     "set": 7,
-    "extNumber": "6/C2/special",
+    "extNumber": "6/special",
     "marketPrice": "75.15",
     "url": "https://cpt.tcgcsv.com/gpg7",
-    "subTypeName": "Normal"
+    "subTypeName": "Normal",
+    "promoCode": "C2"
   },
   {
     "set": 6,
-    "extNumber": "8/C2/special",
+    "extNumber": "8/special",
     "marketPrice": "735.71",
     "url": "https://cpt.tcgcsv.com/hpg7",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "C2"
   },
   {
     "set": 6,
-    "extNumber": "8/C2/special",
+    "extNumber": "8/special",
     "marketPrice": "67.33",
     "url": "https://cpt.tcgcsv.com/hpg7",
-    "subTypeName": "Normal"
+    "subTypeName": "Normal",
+    "promoCode": "C2"
   },
   {
     "set": 10,
-    "extNumber": "23/P3/special",
+    "extNumber": "23/special",
     "marketPrice": "1.81",
     "url": "https://cpt.tcgcsv.com/VKj7",
-    "subTypeName": "Normal"
+    "subTypeName": "Normal",
+    "promoCode": "P3"
   },
   {
     "set": 10,
-    "extNumber": "22/P3/special",
+    "extNumber": "22/special",
     "marketPrice": "0.92",
     "url": "https://cpt.tcgcsv.com/WKj7",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P3"
   },
   {
     "set": 10,
-    "extNumber": "26/P3/special",
+    "extNumber": "26/special",
     "marketPrice": "31.76",
     "url": "https://cpt.tcgcsv.com/XKj7",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P3"
   },
   {
     "set": 10,
-    "extNumber": "21/P3/special",
+    "extNumber": "21/special",
     "marketPrice": "1.11",
     "url": "https://cpt.tcgcsv.com/ZKj7",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P3"
   },
   {
     "set": 10,
-    "extNumber": "19/P3/special",
+    "extNumber": "19/special",
     "marketPrice": "0.57",
     "url": "https://cpt.tcgcsv.com/-Kj7",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P3"
   },
   {
     "set": 10,
-    "extNumber": "18/P3/special",
+    "extNumber": "18/special",
     "marketPrice": "0.62",
     "url": "https://cpt.tcgcsv.com/_Kj7",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P3"
   },
   {
     "set": 7,
-    "extNumber": "38/P3/special",
+    "extNumber": "38/special",
     "marketPrice": "23.66",
     "url": "https://cpt.tcgcsv.com/3Mj7",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P3"
   },
   {
     "set": 9,
-    "extNumber": "12/P3/special",
+    "extNumber": "12/special",
     "marketPrice": "4.87",
     "url": "https://cpt.tcgcsv.com/7Qj7",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P3"
   },
   {
     "set": 10,
-    "extNumber": "27/P3/special",
+    "extNumber": "27/special",
     "marketPrice": "7.73",
     "url": "https://cpt.tcgcsv.com/8Wj7",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P3"
   },
   {
     "set": 10,
-    "extNumber": "24/P3/enchanted",
+    "extNumber": "24/enchanted",
     "marketPrice": "23.99",
     "url": "https://cpt.tcgcsv.com/H9k7",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P3"
   },
   {
     "set": 10,
-    "extNumber": "20/P3/special",
+    "extNumber": "20/special",
     "marketPrice": "0.83",
     "url": "https://cpt.tcgcsv.com/T9k7",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P3"
   },
   {
     "set": 3,
-    "extNumber": "30/P1/enchanted",
+    "extNumber": "30/enchanted",
     "marketPrice": "55.25",
     "url": "https://cpt.tcgcsv.com/wrm7",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P1"
   },
   {
     "set": 1,
-    "extNumber": "2/C1/special",
+    "extNumber": "2/special",
     "marketPrice": "101.65",
     "url": "https://cpt.tcgcsv.com/KZn7",
-    "subTypeName": "Normal"
+    "subTypeName": "Normal",
+    "promoCode": "C1"
   },
   {
     "set": 8,
-    "extNumber": "7/C2/special",
+    "extNumber": "7/special",
     "marketPrice": "44.67",
     "url": "https://cpt.tcgcsv.com/m_n7",
-    "subTypeName": "Normal"
+    "subTypeName": "Normal",
+    "promoCode": "C2"
   },
   {
     "set": 7,
-    "extNumber": "2/C2/special",
+    "extNumber": "2/special",
     "marketPrice": "1900.0",
     "url": "https://cpt.tcgcsv.com/s_n7",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "C2"
   },
   {
     "set": 11,
-    "extNumber": "34/P3/enchanted",
+    "extNumber": "34/enchanted",
     "marketPrice": "39.19",
     "url": "https://cpt.tcgcsv.com/Hlp7",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P3"
   },
   {
     "set": 11,
-    "extNumber": "33/P3/special",
+    "extNumber": "33/special",
     "marketPrice": "2.53",
     "url": "https://cpt.tcgcsv.com/Jlp7",
-    "subTypeName": "Normal"
+    "subTypeName": "Normal",
+    "promoCode": "P3"
   },
   {
     "set": 11,
-    "extNumber": "35/P3/special",
+    "extNumber": "35/special",
     "marketPrice": "31.58",
     "url": "https://cpt.tcgcsv.com/Llp7",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P3"
   },
   {
     "set": 11,
-    "extNumber": "31/P3/special",
+    "extNumber": "31/special",
     "marketPrice": "0.55",
     "url": "https://cpt.tcgcsv.com/Nlp7",
-    "subTypeName": "foil"
+    "subTypeName": "foil",
+    "promoCode": "P3"
   },
   {
     "set": 11,
-    "extNumber": "32/P3/special",
+    "extNumber": "32/special",
     "marketPrice": "0.57",
     "url": "https://cpt.tcgcsv.com/Slp7",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P3"
   },
   {
     "set": 11,
-    "extNumber": "28/P3/special",
+    "extNumber": "28/special",
     "marketPrice": "0.78",
     "url": "https://cpt.tcgcsv.com/Vlp7",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P3"
   },
   {
     "set": 11,
-    "extNumber": "29/P3/special",
+    "extNumber": "29/special",
     "marketPrice": "1.18",
     "url": "https://cpt.tcgcsv.com/Zlp7",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P3"
   },
   {
     "set": 11,
-    "extNumber": "30/P3/special",
+    "extNumber": "30/special",
     "marketPrice": "0.79",
     "url": "https://cpt.tcgcsv.com/2mp7",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P3"
   },
   {
     "set": 9,
-    "extNumber": "39/P3/special",
+    "extNumber": "39/special",
     "marketPrice": "30.51",
     "url": "https://cpt.tcgcsv.com/Wsr7",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P3"
   },
   {
     "set": 10,
-    "extNumber": "36/P3/special",
+    "extNumber": "36/special",
     "marketPrice": "2.3",
     "url": "https://cpt.tcgcsv.com/0tt7",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P3"
   },
   {
     "set": 11,
-    "extNumber": "42/P3/special",
+    "extNumber": "42/special",
     "marketPrice": "4.18",
     "url": "https://cpt.tcgcsv.com/2tt7",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P3"
   },
   {
     "set": 9,
-    "extNumber": "5/C2/special",
+    "extNumber": "5/special",
     "marketPrice": "48.99",
     "url": "https://cpt.tcgcsv.com/Qxv7",
-    "subTypeName": "Normal"
+    "subTypeName": "Normal",
+    "promoCode": "C2"
   },
   {
     "set": 2,
-    "extNumber": "18/P1/special",
+    "extNumber": "18/special",
     "marketPrice": "11.34",
     "url": "https://cpt.tcgcsv.com/-B86",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P1"
   },
   {
     "set": 2,
-    "extNumber": "19/P1/special",
+    "extNumber": "19/special",
     "marketPrice": "15.38",
     "url": "https://cpt.tcgcsv.com/3C86",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P1"
   },
   {
     "set": 1,
-    "extNumber": "20/P1/special",
+    "extNumber": "20/special",
     "marketPrice": "5.68",
     "url": "https://cpt.tcgcsv.com/6C86",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P1"
   },
   {
     "set": 1,
-    "extNumber": "21/P1/special",
+    "extNumber": "21/special",
     "marketPrice": "12.46",
     "url": "https://cpt.tcgcsv.com/8C86",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P1"
   },
   {
     "set": 1,
-    "extNumber": "22/P1/special",
+    "extNumber": "22/special",
     "marketPrice": "5.14",
     "url": "https://cpt.tcgcsv.com/cC86",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P1"
   },
   {
     "set": 1,
-    "extNumber": "23/P1/special",
+    "extNumber": "23/special",
     "marketPrice": "5.86",
     "url": "https://cpt.tcgcsv.com/dC86",
-    "subTypeName": "Holofoil"
+    "subTypeName": "Holofoil",
+    "promoCode": "P1"
   }
 ]
