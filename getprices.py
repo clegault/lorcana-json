@@ -211,7 +211,13 @@ def resolve_promo_ext(
 
     matches = promo_lookup.get((card_name, card_title), [])
     if matches:
-        m = matches[0]
+        if len(matches) > 1:
+            exact = [m for m in matches if m["number"] == ext_int]
+            if len(exact) > 1:
+                print(f"  WARNING: ambiguous promo match for {cleaned!r} ext={ext_number} candidates={[(m['number'], m['rarity'], m['setCode']) for m in exact]}")
+            m = exact[0] if exact else matches[0]
+        else:
+            m = matches[0]
         return f"{m['number']}/{m['rarity']}", m["setCode"]
 
     print(f"  WARNING: no promo match for {cleaned!r} ext={ext_number}")

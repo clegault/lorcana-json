@@ -37633,7 +37633,7 @@
   },
   {
     "set": 9,
-    "extNumber": "4/special",
+    "extNumber": "5/enchanted",
     "marketPrice": "800.0",
     "url": "https://cpt.tcgcsv.com/GJF5",
     "subTypeName": "Holofoil"
@@ -37653,8 +37653,8 @@
     "subTypeName": "Holofoil"
   },
   {
-    "set": 3,
-    "extNumber": "30/enchanted",
+    "set": 2,
+    "extNumber": "2/special",
     "marketPrice": "620.0",
     "url": "https://cpt.tcgcsv.com/WJF5",
     "subTypeName": "Holofoil"
@@ -37878,14 +37878,14 @@
   },
   {
     "set": 2,
-    "extNumber": "2/special",
+    "extNumber": "3/special",
     "marketPrice": "775.95",
     "url": "https://cpt.tcgcsv.com/3Qm6",
     "subTypeName": "Holofoil"
   },
   {
     "set": 2,
-    "extNumber": "2/special",
+    "extNumber": "3/special",
     "marketPrice": "59.92",
     "url": "https://cpt.tcgcsv.com/3Qm6",
     "subTypeName": "Normal"
@@ -38186,7 +38186,7 @@
   },
   {
     "set": 8,
-    "extNumber": "32/special",
+    "extNumber": "33/enchanted",
     "marketPrice": "24.63",
     "url": "https://cpt.tcgcsv.com/fK57",
     "subTypeName": "Holofoil"
@@ -38284,7 +38284,7 @@
   },
   {
     "set": 9,
-    "extNumber": "4/special",
+    "extNumber": "5/enchanted",
     "marketPrice": "53.88",
     "url": "https://cpt.tcgcsv.com/M5d7",
     "subTypeName": "Holofoil"
@@ -38333,7 +38333,7 @@
   },
   {
     "set": 6,
-    "extNumber": "18/special",
+    "extNumber": "13/special",
     "marketPrice": "45.13",
     "url": "https://cpt.tcgcsv.com/b6d7",
     "subTypeName": "Holofoil"
@@ -38361,7 +38361,7 @@
   },
   {
     "set": 6,
-    "extNumber": "12/special",
+    "extNumber": "17/special",
     "marketPrice": "338.42",
     "url": "https://cpt.tcgcsv.com/k6d7",
     "subTypeName": "Holofoil"
@@ -38410,21 +38410,21 @@
   },
   {
     "set": 7,
-    "extNumber": "2/special",
+    "extNumber": "6/special",
     "marketPrice": "75.15",
     "url": "https://cpt.tcgcsv.com/gpg7",
     "subTypeName": "Normal"
   },
   {
     "set": 6,
-    "extNumber": "4/special",
+    "extNumber": "8/special",
     "marketPrice": "735.71",
     "url": "https://cpt.tcgcsv.com/hpg7",
     "subTypeName": "Holofoil"
   },
   {
     "set": 6,
-    "extNumber": "4/special",
+    "extNumber": "8/special",
     "marketPrice": "67.33",
     "url": "https://cpt.tcgcsv.com/hpg7",
     "subTypeName": "Normal"
@@ -38494,7 +38494,7 @@
   },
   {
     "set": 10,
-    "extNumber": "23/special",
+    "extNumber": "24/enchanted",
     "marketPrice": "23.99",
     "url": "https://cpt.tcgcsv.com/H9k7",
     "subTypeName": "Holofoil"
@@ -38522,7 +38522,7 @@
   },
   {
     "set": 8,
-    "extNumber": "3/special",
+    "extNumber": "7/special",
     "marketPrice": "44.67",
     "url": "https://cpt.tcgcsv.com/m_n7",
     "subTypeName": "Normal"
@@ -38536,7 +38536,7 @@
   },
   {
     "set": 11,
-    "extNumber": "33/special",
+    "extNumber": "34/enchanted",
     "marketPrice": "39.19",
     "url": "https://cpt.tcgcsv.com/Hlp7",
     "subTypeName": "Holofoil"
@@ -38613,7 +38613,7 @@
   },
   {
     "set": 9,
-    "extNumber": "1/special",
+    "extNumber": "5/special",
     "marketPrice": "48.99",
     "url": "https://cpt.tcgcsv.com/Qxv7",
     "subTypeName": "Normal"
