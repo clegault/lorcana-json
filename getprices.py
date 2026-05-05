@@ -181,20 +181,33 @@ def load_promo_lookup() -> dict[tuple, list[dict]]:
         if not name:
             continue
 
+        db = card.get("dreamborn", "") or ""
+        dm = re.match(r"^\d{3}-([A-Z][A-Z0-9]*)-\d+$", db)
+        promo_code = dm.group(1) if dm else ""
+
         key = (name, title)
         entry = {
             "number": promo_number,
             "rarity": rarity,
             "setCode": set_num,
+            "promoCode": promo_code,
         }
         lookup.setdefault(key, []).append(entry)
-    return lookup
+
+    # Reverse index: (setCode, number) -> set of (name, title) that share that slot
+    reverse: dict[tuple, set] = {}
+    for (name, title), entries in lookup.items():
+        for entry in entries:
+            reverse.setdefault((entry["setCode"], entry["number"]), set()).add((name, title))
+
+    return lookup, reverse
 
 
 def resolve_promo_ext(
     name: str,
     ext_number: str,
     promo_lookup: dict[tuple, list[dict]],
+    reverse_lookup: dict[tuple, set],
 ) -> tuple[str, int]:
     cleaned = clean_card_name(name).strip()
     parts = cleaned.split(" - ", 1)
@@ -218,7 +231,17 @@ def resolve_promo_ext(
             m = exact[0] if exact else matches[0]
         else:
             m = matches[0]
-        return f"{m['number']}/{m['rarity']}", m["setCode"]
+
+        # Cross-check: warn if another card shares the same (setCode, number)
+        slot_names = reverse_lookup.get((m["setCode"], m["number"]), set())
+        others = slot_names - {(card_name, card_title)}
+        if others:
+            other_strs = [f"{n} - {t}" for n, t in sorted(others)]
+            print(f"  WARNING: promo number collision for {cleaned!r} → set={m['setCode']} number={m['number']} also used by {other_strs}")
+
+        promo_code = m.get("promoCode", "")
+        ext_out = f"{m['number']}/{promo_code}/{m['rarity']}" if promo_code else f"{m['number']}/{m['rarity']}"
+        return ext_out, m["setCode"]
 
     print(f"  WARNING: no promo match for {cleaned!r} ext={ext_number}")
     return ext_number, 0
@@ -256,6 +279,7 @@ def process_url(url: str) -> list[dict]:
 def process_promo_url(
     url: str,
     promo_lookup: dict[tuple, list[dict]],
+    reverse_lookup: dict[tuple, set],
 ) -> list[dict]:
     rows = fetch_csv(url)
     results = []
@@ -264,7 +288,7 @@ def process_promo_url(
         name = row.get("name", "")
         if not raw_ext:
             continue
-        ext_number, set_num = resolve_promo_ext(name, raw_ext, promo_lookup)
+        ext_number, set_num = resolve_promo_ext(name, raw_ext, promo_lookup, reverse_lookup)
         if set_num == 0:
             continue
         record = {
@@ -286,11 +310,11 @@ def main():
         print(f"  -> {len(records)} rows")
 
     print("\nLoading promo card lookup...")
-    promo_lookup = load_promo_lookup()
+    promo_lookup, reverse_lookup = load_promo_lookup()
     print(f"  -> {sum(len(v) for v in promo_lookup.values())} promo cards indexed")
 
     for url in PROMO_URLS:
-        records = process_promo_url(url, promo_lookup)
+        records = process_promo_url(url, promo_lookup, reverse_lookup)
         all_records.extend(records)
         print(f"  -> {len(records)} rows")
 
