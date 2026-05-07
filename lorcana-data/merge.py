@@ -156,13 +156,14 @@ def _image_url(card: dict) -> Optional[str]:
 
 def _foil_mask_url(card: dict) -> Optional[str]:
     for v in card.get("variants") or []:
-        if v.get("variant_id") == "Foiled":
-            return v.get("foil_mask_url")
+        url = v.get("foil_mask_url")
+        if url:
+            return url
     return None
 
 
 def _has_foil(card: dict) -> bool:
-    return any(v.get("variant_id") == "Foiled" for v in card.get("variants") or [])
+    return any(v.get("foil_mask_url") for v in card.get("variants") or [])
 
 
 def _is_placeholder(lang: str, card: dict, en_card: dict) -> bool:
@@ -342,9 +343,7 @@ def merge(catalogs: dict) -> list:
                 "move_cost": en_card.get("move_cost"),
                 "color": colors[0] if colors else None,
                 "colors": colors,
-                "foil": _has_foil(en_card)
-                or en_card.get("special_rarity_id") == "CHALLENGE"
-                or (set_code, number) in _FOIL_OVERRIDES,
+                "foil": _has_foil(en_card),
                 "illustrator": en_card.get("author"),
                 "abilities": abilities,
                 "actions": abilities,
