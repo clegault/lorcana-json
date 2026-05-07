@@ -317,7 +317,7 @@ def merge(catalogs: dict) -> list:
             "move_cost": en_card.get("move_cost"),
             "color": colors[0] if colors else None,
             "colors": colors,
-            "foil": _has_foil(en_card),
+            "foil": _has_foil(en_card) or en_card.get("special_rarity_id") == "CHALLENGE",
             "illustrator": en_card.get("author"),
             "abilities": abilities,
             "actions": abilities,
