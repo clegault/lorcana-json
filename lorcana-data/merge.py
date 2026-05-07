@@ -12,14 +12,23 @@ DOWNLOAD_LANGUAGES = ["en", "de", "fr", "it"]
 LANGUAGES = ["en", "de", "fr", "it", "zh", "ja"]
 
 _SET_CODES = {
-    1: "tfc", 2: "rotf", 3: "iti", 4: "urr", 5: "ssk",
-    6: "azu", 7: "arc", 8: "roj", 9: "fab", 10: "whi",
-    11: "win", 12: "wun",
+    1: "tfc",
+    2: "rotf",
+    3: "iti",
+    4: "urr",
+    5: "ssk",
+    6: "azu",
+    7: "arc",
+    8: "roj",
+    9: "fab",
+    10: "whi",
+    11: "win",
+    12: "wun",
 }
 
 # Non-numeric set parts from card_identifiers (e.g. "1/31 EN Q1")
 _NAMED_SET_NUMBERS = {"Q1": -1, "Q2": -2}
-_NAMED_SET_CODES   = {"Q1": "quest1", "Q2": "quest2"}
+_NAMED_SET_CODES = {"Q1": "quest1", "Q2": "quest2"}
 
 _TYPE_MAP = {
     "characters": "glimmer",
@@ -45,10 +54,16 @@ _ROTATION_MAP = {
     "InfinityConstructed": ["infinity_constructed"],
 }
 
+# Cards whose foil field is wrong in the source data and must be forced True.
+# Key: (set_code, card_number)
+_FOIL_OVERRIDES: set = {
+    ("ssk", 223),  # Half Hexwell Crown — incorrectly marked foil:false
+}
 
 # ---------------------------------------------------------------------------
 # Card identifier parsing
 # ---------------------------------------------------------------------------
+
 
 def _parse_card_id(card_id: str) -> Optional[tuple]:
     """Return (card_num, bucket, set_part) or None.
@@ -57,13 +72,13 @@ def _parse_card_id(card_id: str) -> Optional[tuple]:
       Standard:  "28/204 EN 12"  →  (28, "204", "12")
       Reversed:  "1TFC EN 2/P1"  →  (2, "P1", "1")
     """
-    m = re.match(r'^(\d+)/(\S+) [A-Z]{2} (\S+)$', card_id)
+    m = re.match(r"^(\d+)/(\S+) [A-Z]{2} (\S+)$", card_id)
     if m:
         return int(m.group(1)), m.group(2), m.group(3)
-    m = re.match(r'^(\S+) [A-Z]{2} (\d+)/(\S+)$', card_id)
+    m = re.match(r"^(\S+) [A-Z]{2} (\d+)/(\S+)$", card_id)
     if m:
         prefix, num, bucket = m.group(1), int(m.group(2)), m.group(3)
-        set_m = re.match(r'^(\d+)', prefix)
+        set_m = re.match(r"^(\d+)", prefix)
         set_part = set_m.group(1) if set_m else prefix
         return num, bucket, set_part
     return None
@@ -124,6 +139,7 @@ def _normalize_id(card_id: str) -> str:
 # ---------------------------------------------------------------------------
 # Card field extraction
 # ---------------------------------------------------------------------------
+
 
 def _image_url(card: dict) -> Optional[str]:
     # Standard format (EN/DE/FR/IT): variants[].detail_image_url
@@ -229,6 +245,7 @@ def _classifications(en_card: dict, lang_cards: dict) -> list:
 # Catalog iteration
 # ---------------------------------------------------------------------------
 
+
 def _iter_cards(catalog: dict):
     """Yield (card_type, card) pairs, deduplicating by culture_invariant_id.
 
@@ -249,6 +266,7 @@ def _iter_cards(catalog: dict):
 # Merge
 # ---------------------------------------------------------------------------
 
+
 def merge(catalogs: dict) -> list:
     """Return a flat list of merged cards keyed from the EN catalog."""
     en_catalog = catalogs.get("en", {})
@@ -257,13 +275,17 @@ def merge(catalogs: dict) -> list:
     lang_index: dict = {}
     for lang, catalog in catalogs.items():
         for _, card in _iter_cards(catalog):
-            key = card.get("culture_invariant_id") or _normalize_id(card["card_identifier"])
+            key = card.get("culture_invariant_id") or _normalize_id(
+                card["card_identifier"]
+            )
             lang_index.setdefault(key, {})[lang] = card
 
     merged = []
     seen_dreamborn: set = set()
     for card_type, en_card in _iter_cards(en_catalog):
-        cii_key = en_card.get("culture_invariant_id") or _normalize_id(en_card["card_identifier"])
+        cii_key = en_card.get("culture_invariant_id") or _normalize_id(
+            en_card["card_identifier"]
+        )
         norm_key = _normalize_id(en_card["card_identifier"])
 
         # zh/ja cards have culture_invariant_id=null so they're indexed under the
@@ -290,50 +312,58 @@ def merge(catalogs: dict) -> list:
         card_id = en_card["card_identifier"]
         set_code = _set_code(card_id)
         number = _card_number(card_id)
-        abilities = lorcanito.abilities_for(set_code, number) if set_code and number else []
+        abilities = (
+            lorcanito.abilities_for(set_code, number) if set_code and number else []
+        )
 
         dreamborn = _dreamborn(card_id)
         if dreamborn in seen_dreamborn:
             dreamborn = dreamborn + "V"
         seen_dreamborn.add(dreamborn)
 
-        merged.append({
-            "card_identifier": card_id,
-            "number": number,
-            "dreamborn": dreamborn,
-            "deck_building_id": en_card.get("deck_building_id"),
-            "set_code": set_code,
-            "set": set_code,
-            "set_number": _set_number(card_id),
-            "card_sets": en_card.get("card_sets", []),
-            "type": _TYPE_MAP.get(card_type, card_type),
-            "rarity": _RARITY_MAP.get(rarity_raw, rarity_raw.lower()),
-            "special_rarity_id": en_card.get("special_rarity_id"),
-            "cost": en_card.get("ink_cost"),
-            "inkwell": en_card.get("ink_convertible"),
-            "attack": en_card.get("strength"),
-            "defence": en_card.get("willpower"),
-            "lore": en_card.get("quest_value"),
-            "move_cost": en_card.get("move_cost"),
-            "color": colors[0] if colors else None,
-            "colors": colors,
-            "foil": _has_foil(en_card) or en_card.get("special_rarity_id") == "CHALLENGE",
-            "illustrator": en_card.get("author"),
-            "abilities": abilities,
-            "actions": abilities,
-            "additional_info": en_card.get("additional_info", []),
-            "subtypes": en_card.get("subtypes", []),
-            "searchable_keywords": en_card.get("searchable_keywords", []),
-            "classifications": _classifications(en_card, lang_cards),
-            "rotation_states": _ROTATION_MAP.get(en_card.get("set_rotation_state", ""), []),
-            "set_rotation_state": en_card.get("set_rotation_state"),
-            "ravensburger": _ravensburger_ids(en_card),
-            "languages": languages,
-            # EN display fields at top level for convenience
-            "name": en_card.get("name", ""),
-            "subtitle": en_card.get("subtitle"),
-            "flavor_text": en_card.get("flavor_text"),
-            "rules_text": en_card.get("rules_text"),
-        })
+        merged.append(
+            {
+                "card_identifier": card_id,
+                "number": number,
+                "dreamborn": dreamborn,
+                "deck_building_id": en_card.get("deck_building_id"),
+                "set_code": set_code,
+                "set": set_code,
+                "set_number": _set_number(card_id),
+                "card_sets": en_card.get("card_sets", []),
+                "type": _TYPE_MAP.get(card_type, card_type),
+                "rarity": _RARITY_MAP.get(rarity_raw, rarity_raw.lower()),
+                "special_rarity_id": en_card.get("special_rarity_id"),
+                "cost": en_card.get("ink_cost"),
+                "inkwell": en_card.get("ink_convertible"),
+                "attack": en_card.get("strength"),
+                "defence": en_card.get("willpower"),
+                "lore": en_card.get("quest_value"),
+                "move_cost": en_card.get("move_cost"),
+                "color": colors[0] if colors else None,
+                "colors": colors,
+                "foil": _has_foil(en_card)
+                or en_card.get("special_rarity_id") == "CHALLENGE"
+                or (set_code, number) in _FOIL_OVERRIDES,
+                "illustrator": en_card.get("author"),
+                "abilities": abilities,
+                "actions": abilities,
+                "additional_info": en_card.get("additional_info", []),
+                "subtypes": en_card.get("subtypes", []),
+                "searchable_keywords": en_card.get("searchable_keywords", []),
+                "classifications": _classifications(en_card, lang_cards),
+                "rotation_states": _ROTATION_MAP.get(
+                    en_card.get("set_rotation_state", ""), []
+                ),
+                "set_rotation_state": en_card.get("set_rotation_state"),
+                "ravensburger": _ravensburger_ids(en_card),
+                "languages": languages,
+                # EN display fields at top level for convenience
+                "name": en_card.get("name", ""),
+                "subtitle": en_card.get("subtitle"),
+                "flavor_text": en_card.get("flavor_text"),
+                "rules_text": en_card.get("rules_text"),
+            }
+        )
 
     return merged
