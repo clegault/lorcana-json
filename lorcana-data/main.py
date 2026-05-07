@@ -131,7 +131,7 @@ def main() -> int:
         json.dump(cards, f, indent=2, ensure_ascii=True)
     print(f"Wrote {out_path.relative_to(ROOT)}")
 
-    zip_path = out_path.with_suffix(".zip")
+    zip_path = out_path.with_name(out_path.name + ".zip")
     with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
         zf.write(out_path, out_path.name)
     print(f"Wrote {zip_path.relative_to(ROOT)}")
