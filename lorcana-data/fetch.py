@@ -1,12 +1,15 @@
 """Ravensburger API authentication and catalog download."""
 
-import json
 import requests
 import urllib3
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-LORCANITO_URL = "https://db.lorcanito.com/cards"
+# db.lorcanito.com was retired; the card/ability data now lives behind the
+# tcg.online JSON API (Scryfall-style, paginated). A browser-like User-Agent
+# is required or Cloudflare returns 403.
+LORCANITO_URL = "https://api.tcg.online/v1/lorcana/cards"
+_TCG_UA = "Mozilla/5.0 (lorcana-json data pipeline)"
 
 SSO_URL = "https://sso.ravensburger.de/token"
 CATALOG_URL = "https://api.lorcana.ravensburger.com/v3/catalog/{lang}"
@@ -51,53 +54,30 @@ def download_catalog(lang: str) -> dict:
     return resp.json()
 
 
-def _find_cards(element):
-    """Recursively locate the cards array inside the lorcanito RSC payload."""
-    if isinstance(element, list):
-        for item in element:
-            found = _find_cards(item)
-            if found is not None:
-                return found
-    elif isinstance(element, dict):
-        if "loading" in element:
-            return _find_cards(element["loading"])
-        elif "children" in element:
-            return _find_cards(element["children"])
-        elif "cards" in element and isinstance(element["cards"], list):
-            return element["cards"]
-    return None
-
-
 def fetch_lorcanito() -> list:
-    """Scrape db.lorcanito.com/cards and return the resolved card list."""
-    resp = requests.get(LORCANITO_URL, timeout=30)
-    resp.raise_for_status()
-    html = resp.text
+    """Fetch every card from the tcg.online API and return the flat list.
 
-    marker = 'self.__next_f.push([1,"5:'
-    idx = html.find(marker)
-    if idx == -1:
-        raise ValueError("Could not find lorcanito card data payload in page")
+    The endpoint paginates (100 cards/page); we walk pages until has_more is
+    false. Each card is a Scryfall-style dict with set/number/abilities, which
+    lorcanito.py indexes for ability resolution.
+    """
+    result: list = []
+    page = 1
+    while True:
+        resp = requests.get(
+            LORCANITO_URL,
+            params={"page": page},
+            headers={"User-Agent": _TCG_UA},
+            timeout=60,
+        )
+        resp.raise_for_status()
+        payload = resp.json()
+        result.extend(payload.get("data", []))
+        if not payload.get("has_more"):
+            break
+        page += 1
 
-    right = html[idx + len(marker):]
-    end = right.find('\\n\"])</script>')
-    if end == -1:
-        raise ValueError("Could not find end marker for lorcanito card data")
-
-    chunk = right[:end].replace('\\\\\\"', "``").replace("\\", "")
-    parsed = json.loads(chunk)
-
-    cards_raw = _find_cards(parsed)
-    if not cards_raw:
-        raise ValueError("Could not locate cards array in lorcanito payload")
-
-    # Top-level entries can be reference strings pointing to an earlier index
-    result = []
-    for item in cards_raw:
-        if isinstance(item, dict):
-            result.append(item)
-        elif isinstance(item, str):
-            ref_idx = int(item.split(":")[-1])
-            result.append(result[ref_idx])
+    if not result:
+        raise ValueError("tcg.online returned no cards")
 
     return result

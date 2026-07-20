@@ -56,14 +56,14 @@ def main() -> int:
     parser.add_argument(
         "--refresh-lorcanito",
         action="store_true",
-        help="Re-download lorcanito.json from db.lorcanito.com before merging",
+        help="Re-download lorcanito.json from the tcg.online API before merging",
     )
     args = parser.parse_args()
 
     lorcanito_path = Path(__file__).resolve().parent / "lorcanito.json"
 
     if args.refresh_lorcanito:
-        print("Refreshing lorcanito.json from db.lorcanito.com...")
+        print("Refreshing lorcanito.json from the tcg.online API...")
         try:
             cards = fetch_lorcanito()
             with open(lorcanito_path, "w", encoding="utf-8") as f:

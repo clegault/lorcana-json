@@ -24,6 +24,7 @@ _SET_CODES = {
     10: "whi",
     11: "win",
     12: "wun",
+    13: "aov",
 }
 
 # Non-numeric set parts from card_identifiers (e.g. "1/31 EN Q1")
@@ -115,6 +116,7 @@ def _dreamborn(card_id: str) -> str:
     Examples:
       "1/204 EN 1"   →  "001-001"
       "213/204 EN 7" →  "007-213"
+      "1/207 EN 13"  →  "013-001"
       "21/P2 EN 7"   →  "007-P2-021"
       "1TFC EN 2/P1" →  "001-P1-002"
     """
@@ -126,7 +128,9 @@ def _dreamborn(card_id: str) -> str:
         sn = int(set_part)
     except (ValueError, TypeError):
         return f"{set_part}-{num:03d}"
-    if bucket == "204":
+    # A numeric bucket is the base-set denominator (204 for sets 1-12, 207 for
+    # set 13, etc.); non-numeric buckets (P1, C1, D23) mark promos/variants.
+    if bucket.isdigit():
         return f"{sn:03d}-{num:03d}"
     return f"{sn:03d}-{bucket}-{num:03d}"
 
