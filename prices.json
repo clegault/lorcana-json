@@ -38409,6 +38409,3303 @@
     "subTypeName": "Normal"
   },
   {
+    "set": 13,
+    "extNumber": "21",
+    "marketPrice": "0.07",
+    "url": "https://cpt.tcgcsv.com/06x7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "21",
+    "marketPrice": "0.3",
+    "url": "https://cpt.tcgcsv.com/06x7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "24",
+    "marketPrice": "5.21",
+    "url": "https://cpt.tcgcsv.com/26x7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "24",
+    "marketPrice": "8.75",
+    "url": "https://cpt.tcgcsv.com/26x7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "127",
+    "marketPrice": "0.41",
+    "url": "https://cpt.tcgcsv.com/36x7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "127",
+    "marketPrice": "1.05",
+    "url": "https://cpt.tcgcsv.com/36x7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "",
+    "marketPrice": "203.73",
+    "url": "https://cpt.tcgcsv.com/J9x7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "",
+    "marketPrice": "853.5",
+    "url": "https://cpt.tcgcsv.com/K9x7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "",
+    "marketPrice": "12.24",
+    "url": "https://cpt.tcgcsv.com/L9x7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "",
+    "marketPrice": "",
+    "url": "https://cpt.tcgcsv.com/M9x7",
+    "subTypeName": ""
+  },
+  {
+    "set": 13,
+    "extNumber": "",
+    "marketPrice": "92.73",
+    "url": "https://cpt.tcgcsv.com/N9x7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "",
+    "marketPrice": "58.34",
+    "url": "https://cpt.tcgcsv.com/P9x7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "",
+    "marketPrice": "398.53",
+    "url": "https://cpt.tcgcsv.com/vBz7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "",
+    "marketPrice": "81.01",
+    "url": "https://cpt.tcgcsv.com/LsB7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "7",
+    "marketPrice": "2.37",
+    "url": "https://cpt.tcgcsv.com/-3F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "7",
+    "marketPrice": "0.22",
+    "url": "https://cpt.tcgcsv.com/-3F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "26",
+    "marketPrice": "1.56",
+    "url": "https://cpt.tcgcsv.com/_3F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "26",
+    "marketPrice": "0.28",
+    "url": "https://cpt.tcgcsv.com/_3F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "31",
+    "marketPrice": "5.05",
+    "url": "https://cpt.tcgcsv.com/05F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "31",
+    "marketPrice": "12.36",
+    "url": "https://cpt.tcgcsv.com/05F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "52",
+    "marketPrice": "0.06",
+    "url": "https://cpt.tcgcsv.com/25F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "52",
+    "marketPrice": "0.46",
+    "url": "https://cpt.tcgcsv.com/25F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "61",
+    "marketPrice": "4.28",
+    "url": "https://cpt.tcgcsv.com/35F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "61",
+    "marketPrice": "14.07",
+    "url": "https://cpt.tcgcsv.com/35F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "83",
+    "marketPrice": "0.21",
+    "url": "https://cpt.tcgcsv.com/55F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "83",
+    "marketPrice": "1.46",
+    "url": "https://cpt.tcgcsv.com/55F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "93",
+    "marketPrice": "0.1",
+    "url": "https://cpt.tcgcsv.com/65F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "93",
+    "marketPrice": "0.26",
+    "url": "https://cpt.tcgcsv.com/65F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "95",
+    "marketPrice": "1.06",
+    "url": "https://cpt.tcgcsv.com/75F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "95",
+    "marketPrice": "4.06",
+    "url": "https://cpt.tcgcsv.com/75F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "100",
+    "marketPrice": "6.51",
+    "url": "https://cpt.tcgcsv.com/85F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "100",
+    "marketPrice": "1.97",
+    "url": "https://cpt.tcgcsv.com/85F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "113",
+    "marketPrice": "0.77",
+    "url": "https://cpt.tcgcsv.com/95F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "113",
+    "marketPrice": "0.61",
+    "url": "https://cpt.tcgcsv.com/95F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "115",
+    "marketPrice": "0.36",
+    "url": "https://cpt.tcgcsv.com/b5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "115",
+    "marketPrice": "0.1",
+    "url": "https://cpt.tcgcsv.com/b5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "125",
+    "marketPrice": "2.58",
+    "url": "https://cpt.tcgcsv.com/c5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "125",
+    "marketPrice": "4.19",
+    "url": "https://cpt.tcgcsv.com/c5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "126",
+    "marketPrice": "0.56",
+    "url": "https://cpt.tcgcsv.com/d5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "126",
+    "marketPrice": "0.77",
+    "url": "https://cpt.tcgcsv.com/d5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "132",
+    "marketPrice": "2.28",
+    "url": "https://cpt.tcgcsv.com/f5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "132",
+    "marketPrice": "0.64",
+    "url": "https://cpt.tcgcsv.com/f5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "197",
+    "marketPrice": "2.98",
+    "url": "https://cpt.tcgcsv.com/g5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "197",
+    "marketPrice": "0.69",
+    "url": "https://cpt.tcgcsv.com/g5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "200",
+    "marketPrice": "0.91",
+    "url": "https://cpt.tcgcsv.com/h5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "200",
+    "marketPrice": "0.19",
+    "url": "https://cpt.tcgcsv.com/h5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "201",
+    "marketPrice": "0.6",
+    "url": "https://cpt.tcgcsv.com/j5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "201",
+    "marketPrice": "3.76",
+    "url": "https://cpt.tcgcsv.com/j5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "212",
+    "marketPrice": "18.27",
+    "url": "https://cpt.tcgcsv.com/k5F7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "244",
+    "marketPrice": "",
+    "url": "https://cpt.tcgcsv.com/l5F7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "245",
+    "marketPrice": "",
+    "url": "https://cpt.tcgcsv.com/m5F7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "123",
+    "marketPrice": "0.28",
+    "url": "https://cpt.tcgcsv.com/n5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "123",
+    "marketPrice": "1.13",
+    "url": "https://cpt.tcgcsv.com/n5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "1",
+    "marketPrice": "1.0",
+    "url": "https://cpt.tcgcsv.com/p5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "1",
+    "marketPrice": "1.55",
+    "url": "https://cpt.tcgcsv.com/p5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "2",
+    "marketPrice": "0.4",
+    "url": "https://cpt.tcgcsv.com/q5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "2",
+    "marketPrice": "0.19",
+    "url": "https://cpt.tcgcsv.com/q5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "17",
+    "marketPrice": "0.21",
+    "url": "https://cpt.tcgcsv.com/r5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "17",
+    "marketPrice": "0.43",
+    "url": "https://cpt.tcgcsv.com/r5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "18",
+    "marketPrice": "7.71",
+    "url": "https://cpt.tcgcsv.com/s5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "18",
+    "marketPrice": "4.73",
+    "url": "https://cpt.tcgcsv.com/s5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "28",
+    "marketPrice": "12.28",
+    "url": "https://cpt.tcgcsv.com/t5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "28",
+    "marketPrice": "6.77",
+    "url": "https://cpt.tcgcsv.com/t5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "29",
+    "marketPrice": "1.61",
+    "url": "https://cpt.tcgcsv.com/v5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "29",
+    "marketPrice": "3.74",
+    "url": "https://cpt.tcgcsv.com/v5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "33",
+    "marketPrice": "0.62",
+    "url": "https://cpt.tcgcsv.com/w5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "33",
+    "marketPrice": "0.17",
+    "url": "https://cpt.tcgcsv.com/w5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "34",
+    "marketPrice": "0.17",
+    "url": "https://cpt.tcgcsv.com/x5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "34",
+    "marketPrice": "2.12",
+    "url": "https://cpt.tcgcsv.com/x5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "39",
+    "marketPrice": "0.1",
+    "url": "https://cpt.tcgcsv.com/z5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "39",
+    "marketPrice": "0.42",
+    "url": "https://cpt.tcgcsv.com/z5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "40",
+    "marketPrice": "1.14",
+    "url": "https://cpt.tcgcsv.com/B5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "40",
+    "marketPrice": "0.11",
+    "url": "https://cpt.tcgcsv.com/B5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "44",
+    "marketPrice": "0.08",
+    "url": "https://cpt.tcgcsv.com/C5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "44",
+    "marketPrice": "0.23",
+    "url": "https://cpt.tcgcsv.com/C5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "49",
+    "marketPrice": "0.18",
+    "url": "https://cpt.tcgcsv.com/D5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "49",
+    "marketPrice": "0.38",
+    "url": "https://cpt.tcgcsv.com/D5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "57",
+    "marketPrice": "0.43",
+    "url": "https://cpt.tcgcsv.com/F5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "57",
+    "marketPrice": "2.31",
+    "url": "https://cpt.tcgcsv.com/F5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "60",
+    "marketPrice": "6.6",
+    "url": "https://cpt.tcgcsv.com/G5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "60",
+    "marketPrice": "3.03",
+    "url": "https://cpt.tcgcsv.com/G5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "74",
+    "marketPrice": "1.65",
+    "url": "https://cpt.tcgcsv.com/H5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "74",
+    "marketPrice": "0.13",
+    "url": "https://cpt.tcgcsv.com/J5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "75",
+    "marketPrice": "0.82",
+    "url": "https://cpt.tcgcsv.com/K5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "75",
+    "marketPrice": "0.08",
+    "url": "https://cpt.tcgcsv.com/L5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "79",
+    "marketPrice": "0.93",
+    "url": "https://cpt.tcgcsv.com/M5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "79",
+    "marketPrice": "0.21",
+    "url": "https://cpt.tcgcsv.com/M5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "98",
+    "marketPrice": "2.29",
+    "url": "https://cpt.tcgcsv.com/N5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "98",
+    "marketPrice": "0.42",
+    "url": "https://cpt.tcgcsv.com/N5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "99",
+    "marketPrice": "11.04",
+    "url": "https://cpt.tcgcsv.com/P5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "99",
+    "marketPrice": "4.04",
+    "url": "https://cpt.tcgcsv.com/P5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "108",
+    "marketPrice": "0.28",
+    "url": "https://cpt.tcgcsv.com/Q5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "108",
+    "marketPrice": "0.8",
+    "url": "https://cpt.tcgcsv.com/Q5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "128",
+    "marketPrice": "0.44",
+    "url": "https://cpt.tcgcsv.com/R5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "128",
+    "marketPrice": "0.1",
+    "url": "https://cpt.tcgcsv.com/R5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "129",
+    "marketPrice": "0.59",
+    "url": "https://cpt.tcgcsv.com/S5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "129",
+    "marketPrice": "0.89",
+    "url": "https://cpt.tcgcsv.com/S5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "140",
+    "marketPrice": "0.57",
+    "url": "https://cpt.tcgcsv.com/T5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "140",
+    "marketPrice": "0.24",
+    "url": "https://cpt.tcgcsv.com/T5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "148",
+    "marketPrice": "0.1",
+    "url": "https://cpt.tcgcsv.com/V5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "148",
+    "marketPrice": "0.82",
+    "url": "https://cpt.tcgcsv.com/V5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "153",
+    "marketPrice": "0.54",
+    "url": "https://cpt.tcgcsv.com/W5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "153",
+    "marketPrice": "1.6",
+    "url": "https://cpt.tcgcsv.com/W5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "160",
+    "marketPrice": "0.28",
+    "url": "https://cpt.tcgcsv.com/X5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "160",
+    "marketPrice": "0.68",
+    "url": "https://cpt.tcgcsv.com/X5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "165",
+    "marketPrice": "3.0",
+    "url": "https://cpt.tcgcsv.com/Z5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "165",
+    "marketPrice": "1.83",
+    "url": "https://cpt.tcgcsv.com/Z5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "166",
+    "marketPrice": "0.59",
+    "url": "https://cpt.tcgcsv.com/-5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "166",
+    "marketPrice": "0.09",
+    "url": "https://cpt.tcgcsv.com/-5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "178",
+    "marketPrice": "0.52",
+    "url": "https://cpt.tcgcsv.com/_5F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "178",
+    "marketPrice": "0.11",
+    "url": "https://cpt.tcgcsv.com/_5F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "195",
+    "marketPrice": "0.66",
+    "url": "https://cpt.tcgcsv.com/06F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "195",
+    "marketPrice": "0.13",
+    "url": "https://cpt.tcgcsv.com/06F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "139",
+    "marketPrice": "0.64",
+    "url": "https://cpt.tcgcsv.com/26F7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "139",
+    "marketPrice": "0.11",
+    "url": "https://cpt.tcgcsv.com/26F7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "3",
+    "marketPrice": "0.55",
+    "url": "https://cpt.tcgcsv.com/QQF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "3",
+    "marketPrice": "0.06",
+    "url": "https://cpt.tcgcsv.com/QQF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "4",
+    "marketPrice": "0.18",
+    "url": "https://cpt.tcgcsv.com/RQF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "4",
+    "marketPrice": "0.06",
+    "url": "https://cpt.tcgcsv.com/RQF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "5",
+    "marketPrice": "0.82",
+    "url": "https://cpt.tcgcsv.com/SQF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "5",
+    "marketPrice": "0.15",
+    "url": "https://cpt.tcgcsv.com/SQF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "6",
+    "marketPrice": "0.46",
+    "url": "https://cpt.tcgcsv.com/TQF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "6",
+    "marketPrice": "0.1",
+    "url": "https://cpt.tcgcsv.com/TQF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "8",
+    "marketPrice": "0.06",
+    "url": "https://cpt.tcgcsv.com/VQF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "8",
+    "marketPrice": "0.33",
+    "url": "https://cpt.tcgcsv.com/VQF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "9",
+    "marketPrice": "0.48",
+    "url": "https://cpt.tcgcsv.com/WQF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "9",
+    "marketPrice": "0.05",
+    "url": "https://cpt.tcgcsv.com/WQF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "10",
+    "marketPrice": "1.62",
+    "url": "https://cpt.tcgcsv.com/XQF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "10",
+    "marketPrice": "0.06",
+    "url": "https://cpt.tcgcsv.com/XQF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "11",
+    "marketPrice": "0.07",
+    "url": "https://cpt.tcgcsv.com/ZQF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "11",
+    "marketPrice": "0.31",
+    "url": "https://cpt.tcgcsv.com/ZQF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "12",
+    "marketPrice": "1.79",
+    "url": "https://cpt.tcgcsv.com/-QF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "12",
+    "marketPrice": "3.22",
+    "url": "https://cpt.tcgcsv.com/-QF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "13",
+    "marketPrice": "0.12",
+    "url": "https://cpt.tcgcsv.com/_QF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "13",
+    "marketPrice": "0.6",
+    "url": "https://cpt.tcgcsv.com/_QF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "14",
+    "marketPrice": "0.96",
+    "url": "https://cpt.tcgcsv.com/0RF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "14",
+    "marketPrice": "0.09",
+    "url": "https://cpt.tcgcsv.com/0RF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "15",
+    "marketPrice": "4.47",
+    "url": "https://cpt.tcgcsv.com/2RF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "15",
+    "marketPrice": "0.68",
+    "url": "https://cpt.tcgcsv.com/2RF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "16",
+    "marketPrice": "5.64",
+    "url": "https://cpt.tcgcsv.com/3RF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "16",
+    "marketPrice": "3.52",
+    "url": "https://cpt.tcgcsv.com/3RF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "19",
+    "marketPrice": "0.96",
+    "url": "https://cpt.tcgcsv.com/5RF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "19",
+    "marketPrice": "0.21",
+    "url": "https://cpt.tcgcsv.com/5RF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "20",
+    "marketPrice": "0.08",
+    "url": "https://cpt.tcgcsv.com/6RF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "20",
+    "marketPrice": "0.19",
+    "url": "https://cpt.tcgcsv.com/6RF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "22",
+    "marketPrice": "2.31",
+    "url": "https://cpt.tcgcsv.com/7RF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "22",
+    "marketPrice": "6.01",
+    "url": "https://cpt.tcgcsv.com/7RF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "23",
+    "marketPrice": "0.08",
+    "url": "https://cpt.tcgcsv.com/8RF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "23",
+    "marketPrice": "0.52",
+    "url": "https://cpt.tcgcsv.com/8RF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "25",
+    "marketPrice": "0.15",
+    "url": "https://cpt.tcgcsv.com/9RF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "25",
+    "marketPrice": "0.67",
+    "url": "https://cpt.tcgcsv.com/9RF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "27",
+    "marketPrice": "4.93",
+    "url": "https://cpt.tcgcsv.com/bRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "27",
+    "marketPrice": "2.67",
+    "url": "https://cpt.tcgcsv.com/bRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "30",
+    "marketPrice": "0.8",
+    "url": "https://cpt.tcgcsv.com/cRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "30",
+    "marketPrice": "0.24",
+    "url": "https://cpt.tcgcsv.com/cRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "32",
+    "marketPrice": "0.34",
+    "url": "https://cpt.tcgcsv.com/dRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "32",
+    "marketPrice": "0.09",
+    "url": "https://cpt.tcgcsv.com/dRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "35",
+    "marketPrice": "0.18",
+    "url": "https://cpt.tcgcsv.com/fRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "35",
+    "marketPrice": "0.92",
+    "url": "https://cpt.tcgcsv.com/fRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "36",
+    "marketPrice": "0.08",
+    "url": "https://cpt.tcgcsv.com/gRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "36",
+    "marketPrice": "0.38",
+    "url": "https://cpt.tcgcsv.com/gRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "37",
+    "marketPrice": "0.09",
+    "url": "https://cpt.tcgcsv.com/hRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "37",
+    "marketPrice": "0.37",
+    "url": "https://cpt.tcgcsv.com/hRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "38",
+    "marketPrice": "0.25",
+    "url": "https://cpt.tcgcsv.com/jRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "38",
+    "marketPrice": "0.07",
+    "url": "https://cpt.tcgcsv.com/jRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "41",
+    "marketPrice": "0.39",
+    "url": "https://cpt.tcgcsv.com/kRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "41",
+    "marketPrice": "0.05",
+    "url": "https://cpt.tcgcsv.com/kRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "42",
+    "marketPrice": "0.12",
+    "url": "https://cpt.tcgcsv.com/lRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "42",
+    "marketPrice": "0.93",
+    "url": "https://cpt.tcgcsv.com/lRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "43",
+    "marketPrice": "0.64",
+    "url": "https://cpt.tcgcsv.com/mRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "43",
+    "marketPrice": "0.07",
+    "url": "https://cpt.tcgcsv.com/mRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "45",
+    "marketPrice": "0.6",
+    "url": "https://cpt.tcgcsv.com/nRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "45",
+    "marketPrice": "0.1",
+    "url": "https://cpt.tcgcsv.com/nRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "46",
+    "marketPrice": "2.35",
+    "url": "https://cpt.tcgcsv.com/pRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "46",
+    "marketPrice": "0.18",
+    "url": "https://cpt.tcgcsv.com/pRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "47",
+    "marketPrice": "0.37",
+    "url": "https://cpt.tcgcsv.com/qRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "47",
+    "marketPrice": "0.06",
+    "url": "https://cpt.tcgcsv.com/qRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "48",
+    "marketPrice": "0.33",
+    "url": "https://cpt.tcgcsv.com/rRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "48",
+    "marketPrice": "0.05",
+    "url": "https://cpt.tcgcsv.com/rRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "50",
+    "marketPrice": "2.89",
+    "url": "https://cpt.tcgcsv.com/sRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "50",
+    "marketPrice": "5.03",
+    "url": "https://cpt.tcgcsv.com/sRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "51",
+    "marketPrice": "0.26",
+    "url": "https://cpt.tcgcsv.com/tRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "51",
+    "marketPrice": "0.57",
+    "url": "https://cpt.tcgcsv.com/tRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "53",
+    "marketPrice": "0.67",
+    "url": "https://cpt.tcgcsv.com/vRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "53",
+    "marketPrice": "0.17",
+    "url": "https://cpt.tcgcsv.com/vRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "54",
+    "marketPrice": "0.28",
+    "url": "https://cpt.tcgcsv.com/wRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "54",
+    "marketPrice": "1.2",
+    "url": "https://cpt.tcgcsv.com/wRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "55",
+    "marketPrice": "1.9",
+    "url": "https://cpt.tcgcsv.com/xRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "55",
+    "marketPrice": "0.17",
+    "url": "https://cpt.tcgcsv.com/xRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "56",
+    "marketPrice": "1.62",
+    "url": "https://cpt.tcgcsv.com/zRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "56",
+    "marketPrice": "0.11",
+    "url": "https://cpt.tcgcsv.com/zRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "58",
+    "marketPrice": "0.11",
+    "url": "https://cpt.tcgcsv.com/BRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "58",
+    "marketPrice": "0.36",
+    "url": "https://cpt.tcgcsv.com/BRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "59",
+    "marketPrice": "0.87",
+    "url": "https://cpt.tcgcsv.com/CRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "59",
+    "marketPrice": "2.31",
+    "url": "https://cpt.tcgcsv.com/CRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "62",
+    "marketPrice": "3.56",
+    "url": "https://cpt.tcgcsv.com/DRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "62",
+    "marketPrice": "2.11",
+    "url": "https://cpt.tcgcsv.com/DRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "63",
+    "marketPrice": "1.92",
+    "url": "https://cpt.tcgcsv.com/FRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "63",
+    "marketPrice": "1.33",
+    "url": "https://cpt.tcgcsv.com/FRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "64",
+    "marketPrice": "0.05",
+    "url": "https://cpt.tcgcsv.com/GRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "64",
+    "marketPrice": "0.27",
+    "url": "https://cpt.tcgcsv.com/GRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "65",
+    "marketPrice": "0.46",
+    "url": "https://cpt.tcgcsv.com/HRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "65",
+    "marketPrice": "0.81",
+    "url": "https://cpt.tcgcsv.com/HRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "66",
+    "marketPrice": "0.06",
+    "url": "https://cpt.tcgcsv.com/JRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "66",
+    "marketPrice": "0.96",
+    "url": "https://cpt.tcgcsv.com/JRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "67",
+    "marketPrice": "0.42",
+    "url": "https://cpt.tcgcsv.com/KRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "67",
+    "marketPrice": "0.1",
+    "url": "https://cpt.tcgcsv.com/KRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "68",
+    "marketPrice": "0.45",
+    "url": "https://cpt.tcgcsv.com/LRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "68",
+    "marketPrice": "0.11",
+    "url": "https://cpt.tcgcsv.com/LRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "69",
+    "marketPrice": "0.42",
+    "url": "https://cpt.tcgcsv.com/MRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "69",
+    "marketPrice": "0.04",
+    "url": "https://cpt.tcgcsv.com/MRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "70",
+    "marketPrice": "0.07",
+    "url": "https://cpt.tcgcsv.com/NRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "70",
+    "marketPrice": "0.88",
+    "url": "https://cpt.tcgcsv.com/NRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "71",
+    "marketPrice": "0.34",
+    "url": "https://cpt.tcgcsv.com/PRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "71",
+    "marketPrice": "2.25",
+    "url": "https://cpt.tcgcsv.com/PRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "72",
+    "marketPrice": "1.88",
+    "url": "https://cpt.tcgcsv.com/QRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "72",
+    "marketPrice": "1.15",
+    "url": "https://cpt.tcgcsv.com/QRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "73",
+    "marketPrice": "0.15",
+    "url": "https://cpt.tcgcsv.com/RRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "73",
+    "marketPrice": "0.53",
+    "url": "https://cpt.tcgcsv.com/RRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "76",
+    "marketPrice": "0.5",
+    "url": "https://cpt.tcgcsv.com/SRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "76",
+    "marketPrice": "0.07",
+    "url": "https://cpt.tcgcsv.com/SRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "77",
+    "marketPrice": "0.57",
+    "url": "https://cpt.tcgcsv.com/TRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "77",
+    "marketPrice": "0.85",
+    "url": "https://cpt.tcgcsv.com/TRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "78",
+    "marketPrice": "0.53",
+    "url": "https://cpt.tcgcsv.com/VRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "78",
+    "marketPrice": "0.3",
+    "url": "https://cpt.tcgcsv.com/VRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "80",
+    "marketPrice": "0.38",
+    "url": "https://cpt.tcgcsv.com/WRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "80",
+    "marketPrice": "0.08",
+    "url": "https://cpt.tcgcsv.com/WRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "81",
+    "marketPrice": "0.19",
+    "url": "https://cpt.tcgcsv.com/XRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "81",
+    "marketPrice": "1.45",
+    "url": "https://cpt.tcgcsv.com/XRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "82",
+    "marketPrice": "0.53",
+    "url": "https://cpt.tcgcsv.com/ZRF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "82",
+    "marketPrice": "0.06",
+    "url": "https://cpt.tcgcsv.com/ZRF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "84",
+    "marketPrice": "0.07",
+    "url": "https://cpt.tcgcsv.com/-RF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "84",
+    "marketPrice": "0.21",
+    "url": "https://cpt.tcgcsv.com/-RF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "85",
+    "marketPrice": "0.67",
+    "url": "https://cpt.tcgcsv.com/_RF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "85",
+    "marketPrice": "0.16",
+    "url": "https://cpt.tcgcsv.com/_RF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "86",
+    "marketPrice": "0.25",
+    "url": "https://cpt.tcgcsv.com/0SF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "86",
+    "marketPrice": "0.41",
+    "url": "https://cpt.tcgcsv.com/0SF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "87",
+    "marketPrice": "0.06",
+    "url": "https://cpt.tcgcsv.com/2SF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "87",
+    "marketPrice": "0.38",
+    "url": "https://cpt.tcgcsv.com/2SF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "88",
+    "marketPrice": "0.41",
+    "url": "https://cpt.tcgcsv.com/3SF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "88",
+    "marketPrice": "0.2",
+    "url": "https://cpt.tcgcsv.com/3SF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "89",
+    "marketPrice": "0.21",
+    "url": "https://cpt.tcgcsv.com/5SF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "89",
+    "marketPrice": "1.04",
+    "url": "https://cpt.tcgcsv.com/5SF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "90",
+    "marketPrice": "0.44",
+    "url": "https://cpt.tcgcsv.com/6SF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "90",
+    "marketPrice": "0.14",
+    "url": "https://cpt.tcgcsv.com/6SF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "91",
+    "marketPrice": "1.17",
+    "url": "https://cpt.tcgcsv.com/7SF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "91",
+    "marketPrice": "0.08",
+    "url": "https://cpt.tcgcsv.com/7SF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "92",
+    "marketPrice": "0.43",
+    "url": "https://cpt.tcgcsv.com/8SF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "92",
+    "marketPrice": "0.57",
+    "url": "https://cpt.tcgcsv.com/8SF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "94",
+    "marketPrice": "1.53",
+    "url": "https://cpt.tcgcsv.com/9SF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "94",
+    "marketPrice": "0.5",
+    "url": "https://cpt.tcgcsv.com/9SF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "96",
+    "marketPrice": "0.27",
+    "url": "https://cpt.tcgcsv.com/bSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "96",
+    "marketPrice": "0.08",
+    "url": "https://cpt.tcgcsv.com/bSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "97",
+    "marketPrice": "7.55",
+    "url": "https://cpt.tcgcsv.com/cSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "97",
+    "marketPrice": "14.42",
+    "url": "https://cpt.tcgcsv.com/cSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "101",
+    "marketPrice": "0.87",
+    "url": "https://cpt.tcgcsv.com/dSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "101",
+    "marketPrice": "0.29",
+    "url": "https://cpt.tcgcsv.com/dSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "102",
+    "marketPrice": "1.53",
+    "url": "https://cpt.tcgcsv.com/fSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "102",
+    "marketPrice": "0.08",
+    "url": "https://cpt.tcgcsv.com/fSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "103",
+    "marketPrice": "0.21",
+    "url": "https://cpt.tcgcsv.com/gSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "103",
+    "marketPrice": "1.82",
+    "url": "https://cpt.tcgcsv.com/gSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "104",
+    "marketPrice": "0.32",
+    "url": "https://cpt.tcgcsv.com/hSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "104",
+    "marketPrice": "0.07",
+    "url": "https://cpt.tcgcsv.com/hSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "105",
+    "marketPrice": "0.55",
+    "url": "https://cpt.tcgcsv.com/jSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "105",
+    "marketPrice": "0.12",
+    "url": "https://cpt.tcgcsv.com/jSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "106",
+    "marketPrice": "0.53",
+    "url": "https://cpt.tcgcsv.com/kSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "106",
+    "marketPrice": "0.08",
+    "url": "https://cpt.tcgcsv.com/kSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "107",
+    "marketPrice": "0.2",
+    "url": "https://cpt.tcgcsv.com/lSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "107",
+    "marketPrice": "0.68",
+    "url": "https://cpt.tcgcsv.com/lSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "109",
+    "marketPrice": "1.43",
+    "url": "https://cpt.tcgcsv.com/mSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "109",
+    "marketPrice": "0.71",
+    "url": "https://cpt.tcgcsv.com/mSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "110",
+    "marketPrice": "0.4",
+    "url": "https://cpt.tcgcsv.com/nSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "110",
+    "marketPrice": "0.07",
+    "url": "https://cpt.tcgcsv.com/pSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "111",
+    "marketPrice": "0.46",
+    "url": "https://cpt.tcgcsv.com/qSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "111",
+    "marketPrice": "0.08",
+    "url": "https://cpt.tcgcsv.com/rSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "112",
+    "marketPrice": "0.24",
+    "url": "https://cpt.tcgcsv.com/sSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "112",
+    "marketPrice": "0.06",
+    "url": "https://cpt.tcgcsv.com/sSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "114",
+    "marketPrice": "1.29",
+    "url": "https://cpt.tcgcsv.com/tSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "114",
+    "marketPrice": "0.07",
+    "url": "https://cpt.tcgcsv.com/tSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "116",
+    "marketPrice": "0.23",
+    "url": "https://cpt.tcgcsv.com/vSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "116",
+    "marketPrice": "0.08",
+    "url": "https://cpt.tcgcsv.com/vSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "117",
+    "marketPrice": "0.09",
+    "url": "https://cpt.tcgcsv.com/wSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "117",
+    "marketPrice": "0.27",
+    "url": "https://cpt.tcgcsv.com/wSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "118",
+    "marketPrice": "0.06",
+    "url": "https://cpt.tcgcsv.com/xSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "118",
+    "marketPrice": "0.56",
+    "url": "https://cpt.tcgcsv.com/xSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "119",
+    "marketPrice": "0.65",
+    "url": "https://cpt.tcgcsv.com/zSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "119",
+    "marketPrice": "0.15",
+    "url": "https://cpt.tcgcsv.com/zSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "120",
+    "marketPrice": "0.81",
+    "url": "https://cpt.tcgcsv.com/BSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "120",
+    "marketPrice": "0.25",
+    "url": "https://cpt.tcgcsv.com/BSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "121",
+    "marketPrice": "0.09",
+    "url": "https://cpt.tcgcsv.com/CSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "121",
+    "marketPrice": "0.26",
+    "url": "https://cpt.tcgcsv.com/CSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "122",
+    "marketPrice": "0.3",
+    "url": "https://cpt.tcgcsv.com/DSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "122",
+    "marketPrice": "0.06",
+    "url": "https://cpt.tcgcsv.com/DSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "124",
+    "marketPrice": "0.09",
+    "url": "https://cpt.tcgcsv.com/FSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "124",
+    "marketPrice": "0.39",
+    "url": "https://cpt.tcgcsv.com/FSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "130",
+    "marketPrice": "0.12",
+    "url": "https://cpt.tcgcsv.com/GSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "130",
+    "marketPrice": "0.21",
+    "url": "https://cpt.tcgcsv.com/GSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "131",
+    "marketPrice": "0.08",
+    "url": "https://cpt.tcgcsv.com/HSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "131",
+    "marketPrice": "0.53",
+    "url": "https://cpt.tcgcsv.com/HSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "133",
+    "marketPrice": "7.42",
+    "url": "https://cpt.tcgcsv.com/JSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "133",
+    "marketPrice": "1.47",
+    "url": "https://cpt.tcgcsv.com/JSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "134",
+    "marketPrice": "0.27",
+    "url": "https://cpt.tcgcsv.com/KSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "134",
+    "marketPrice": "1.7",
+    "url": "https://cpt.tcgcsv.com/KSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "135",
+    "marketPrice": "0.49",
+    "url": "https://cpt.tcgcsv.com/LSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "135",
+    "marketPrice": "4.89",
+    "url": "https://cpt.tcgcsv.com/LSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "136",
+    "marketPrice": "0.1",
+    "url": "https://cpt.tcgcsv.com/MSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "136",
+    "marketPrice": "0.92",
+    "url": "https://cpt.tcgcsv.com/MSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "137",
+    "marketPrice": "0.13",
+    "url": "https://cpt.tcgcsv.com/NSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "137",
+    "marketPrice": "0.75",
+    "url": "https://cpt.tcgcsv.com/NSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "138",
+    "marketPrice": "0.36",
+    "url": "https://cpt.tcgcsv.com/PSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "138",
+    "marketPrice": "0.08",
+    "url": "https://cpt.tcgcsv.com/PSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "141",
+    "marketPrice": "0.14",
+    "url": "https://cpt.tcgcsv.com/QSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "141",
+    "marketPrice": "0.3",
+    "url": "https://cpt.tcgcsv.com/QSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "142",
+    "marketPrice": "1.68",
+    "url": "https://cpt.tcgcsv.com/RSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "142",
+    "marketPrice": "0.34",
+    "url": "https://cpt.tcgcsv.com/RSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "143",
+    "marketPrice": "0.22",
+    "url": "https://cpt.tcgcsv.com/SSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "143",
+    "marketPrice": "0.11",
+    "url": "https://cpt.tcgcsv.com/SSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "144",
+    "marketPrice": "0.1",
+    "url": "https://cpt.tcgcsv.com/TSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "144",
+    "marketPrice": "1.42",
+    "url": "https://cpt.tcgcsv.com/TSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "145",
+    "marketPrice": "0.41",
+    "url": "https://cpt.tcgcsv.com/VSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "145",
+    "marketPrice": "0.07",
+    "url": "https://cpt.tcgcsv.com/VSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "146",
+    "marketPrice": "0.57",
+    "url": "https://cpt.tcgcsv.com/WSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "146",
+    "marketPrice": "0.28",
+    "url": "https://cpt.tcgcsv.com/WSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "147",
+    "marketPrice": "0.61",
+    "url": "https://cpt.tcgcsv.com/XSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "147",
+    "marketPrice": "2.01",
+    "url": "https://cpt.tcgcsv.com/XSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "149",
+    "marketPrice": "0.29",
+    "url": "https://cpt.tcgcsv.com/ZSF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "149",
+    "marketPrice": "0.08",
+    "url": "https://cpt.tcgcsv.com/ZSF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "150",
+    "marketPrice": "0.6",
+    "url": "https://cpt.tcgcsv.com/-SF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "150",
+    "marketPrice": "0.07",
+    "url": "https://cpt.tcgcsv.com/-SF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "151",
+    "marketPrice": "0.35",
+    "url": "https://cpt.tcgcsv.com/_SF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "151",
+    "marketPrice": "0.15",
+    "url": "https://cpt.tcgcsv.com/_SF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "152",
+    "marketPrice": "0.1",
+    "url": "https://cpt.tcgcsv.com/0TF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "152",
+    "marketPrice": "0.25",
+    "url": "https://cpt.tcgcsv.com/0TF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "154",
+    "marketPrice": "0.72",
+    "url": "https://cpt.tcgcsv.com/2TF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "154",
+    "marketPrice": "0.06",
+    "url": "https://cpt.tcgcsv.com/2TF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "155",
+    "marketPrice": "0.33",
+    "url": "https://cpt.tcgcsv.com/3TF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "155",
+    "marketPrice": "0.07",
+    "url": "https://cpt.tcgcsv.com/3TF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "156",
+    "marketPrice": "0.15",
+    "url": "https://cpt.tcgcsv.com/5TF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "156",
+    "marketPrice": "1.05",
+    "url": "https://cpt.tcgcsv.com/5TF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "157",
+    "marketPrice": "0.73",
+    "url": "https://cpt.tcgcsv.com/6TF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "157",
+    "marketPrice": "0.12",
+    "url": "https://cpt.tcgcsv.com/6TF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "158",
+    "marketPrice": "2.02",
+    "url": "https://cpt.tcgcsv.com/7TF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "158",
+    "marketPrice": "0.18",
+    "url": "https://cpt.tcgcsv.com/8TF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "159",
+    "marketPrice": "2.32",
+    "url": "https://cpt.tcgcsv.com/9TF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "159",
+    "marketPrice": "0.1",
+    "url": "https://cpt.tcgcsv.com/bTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "161",
+    "marketPrice": "0.46",
+    "url": "https://cpt.tcgcsv.com/cTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "161",
+    "marketPrice": "0.11",
+    "url": "https://cpt.tcgcsv.com/cTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "162",
+    "marketPrice": "0.23",
+    "url": "https://cpt.tcgcsv.com/dTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "162",
+    "marketPrice": "0.6",
+    "url": "https://cpt.tcgcsv.com/dTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "163",
+    "marketPrice": "0.48",
+    "url": "https://cpt.tcgcsv.com/fTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "163",
+    "marketPrice": "0.16",
+    "url": "https://cpt.tcgcsv.com/fTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "164",
+    "marketPrice": "3.49",
+    "url": "https://cpt.tcgcsv.com/gTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "164",
+    "marketPrice": "0.17",
+    "url": "https://cpt.tcgcsv.com/gTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "167",
+    "marketPrice": "0.32",
+    "url": "https://cpt.tcgcsv.com/hTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "167",
+    "marketPrice": "0.07",
+    "url": "https://cpt.tcgcsv.com/hTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "168",
+    "marketPrice": "0.84",
+    "url": "https://cpt.tcgcsv.com/jTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "168",
+    "marketPrice": "0.05",
+    "url": "https://cpt.tcgcsv.com/jTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "169",
+    "marketPrice": "0.08",
+    "url": "https://cpt.tcgcsv.com/kTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "169",
+    "marketPrice": "0.39",
+    "url": "https://cpt.tcgcsv.com/kTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "170",
+    "marketPrice": "0.17",
+    "url": "https://cpt.tcgcsv.com/lTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "170",
+    "marketPrice": "0.69",
+    "url": "https://cpt.tcgcsv.com/lTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "171",
+    "marketPrice": "0.09",
+    "url": "https://cpt.tcgcsv.com/mTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "171",
+    "marketPrice": "1.33",
+    "url": "https://cpt.tcgcsv.com/mTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "172",
+    "marketPrice": "0.49",
+    "url": "https://cpt.tcgcsv.com/nTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "172",
+    "marketPrice": "0.14",
+    "url": "https://cpt.tcgcsv.com/nTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "173",
+    "marketPrice": "0.44",
+    "url": "https://cpt.tcgcsv.com/pTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "173",
+    "marketPrice": "0.11",
+    "url": "https://cpt.tcgcsv.com/pTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "174",
+    "marketPrice": "0.12",
+    "url": "https://cpt.tcgcsv.com/qTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "174",
+    "marketPrice": "0.77",
+    "url": "https://cpt.tcgcsv.com/qTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "175",
+    "marketPrice": "0.7",
+    "url": "https://cpt.tcgcsv.com/rTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "175",
+    "marketPrice": "0.14",
+    "url": "https://cpt.tcgcsv.com/rTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "176",
+    "marketPrice": "5.17",
+    "url": "https://cpt.tcgcsv.com/sTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "176",
+    "marketPrice": "9.55",
+    "url": "https://cpt.tcgcsv.com/sTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "177",
+    "marketPrice": "0.67",
+    "url": "https://cpt.tcgcsv.com/tTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "177",
+    "marketPrice": "0.23",
+    "url": "https://cpt.tcgcsv.com/tTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "179",
+    "marketPrice": "0.38",
+    "url": "https://cpt.tcgcsv.com/vTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "179",
+    "marketPrice": "1.53",
+    "url": "https://cpt.tcgcsv.com/vTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "180",
+    "marketPrice": "0.23",
+    "url": "https://cpt.tcgcsv.com/wTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "180",
+    "marketPrice": "1.6",
+    "url": "https://cpt.tcgcsv.com/wTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "181",
+    "marketPrice": "0.08",
+    "url": "https://cpt.tcgcsv.com/xTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "181",
+    "marketPrice": "0.33",
+    "url": "https://cpt.tcgcsv.com/xTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "182",
+    "marketPrice": "0.08",
+    "url": "https://cpt.tcgcsv.com/zTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "182",
+    "marketPrice": "0.4",
+    "url": "https://cpt.tcgcsv.com/zTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "183",
+    "marketPrice": "0.16",
+    "url": "https://cpt.tcgcsv.com/BTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "183",
+    "marketPrice": "1.1",
+    "url": "https://cpt.tcgcsv.com/BTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "184",
+    "marketPrice": "1.1",
+    "url": "https://cpt.tcgcsv.com/CTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "184",
+    "marketPrice": "0.07",
+    "url": "https://cpt.tcgcsv.com/CTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "185",
+    "marketPrice": "0.63",
+    "url": "https://cpt.tcgcsv.com/DTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "185",
+    "marketPrice": "0.09",
+    "url": "https://cpt.tcgcsv.com/DTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "186",
+    "marketPrice": "0.51",
+    "url": "https://cpt.tcgcsv.com/FTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "186",
+    "marketPrice": "0.09",
+    "url": "https://cpt.tcgcsv.com/FTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "187",
+    "marketPrice": "0.5",
+    "url": "https://cpt.tcgcsv.com/GTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "187",
+    "marketPrice": "0.12",
+    "url": "https://cpt.tcgcsv.com/GTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "188",
+    "marketPrice": "0.08",
+    "url": "https://cpt.tcgcsv.com/HTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "188",
+    "marketPrice": "0.73",
+    "url": "https://cpt.tcgcsv.com/HTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "189",
+    "marketPrice": "0.08",
+    "url": "https://cpt.tcgcsv.com/JTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "189",
+    "marketPrice": "0.28",
+    "url": "https://cpt.tcgcsv.com/JTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "190",
+    "marketPrice": "0.4",
+    "url": "https://cpt.tcgcsv.com/KTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "190",
+    "marketPrice": "0.08",
+    "url": "https://cpt.tcgcsv.com/KTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "191",
+    "marketPrice": "0.21",
+    "url": "https://cpt.tcgcsv.com/LTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "191",
+    "marketPrice": "0.47",
+    "url": "https://cpt.tcgcsv.com/LTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "192",
+    "marketPrice": "0.07",
+    "url": "https://cpt.tcgcsv.com/MTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "192",
+    "marketPrice": "1.52",
+    "url": "https://cpt.tcgcsv.com/MTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "193",
+    "marketPrice": "0.25",
+    "url": "https://cpt.tcgcsv.com/PTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "193",
+    "marketPrice": "0.1",
+    "url": "https://cpt.tcgcsv.com/PTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "194",
+    "marketPrice": "3.75",
+    "url": "https://cpt.tcgcsv.com/QTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "194",
+    "marketPrice": "1.23",
+    "url": "https://cpt.tcgcsv.com/QTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "196",
+    "marketPrice": "3.86",
+    "url": "https://cpt.tcgcsv.com/RTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "196",
+    "marketPrice": "2.32",
+    "url": "https://cpt.tcgcsv.com/RTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "198",
+    "marketPrice": "0.09",
+    "url": "https://cpt.tcgcsv.com/STF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "198",
+    "marketPrice": "0.34",
+    "url": "https://cpt.tcgcsv.com/STF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "199",
+    "marketPrice": "0.33",
+    "url": "https://cpt.tcgcsv.com/TTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "199",
+    "marketPrice": "0.08",
+    "url": "https://cpt.tcgcsv.com/TTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "202",
+    "marketPrice": "0.13",
+    "url": "https://cpt.tcgcsv.com/VTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "202",
+    "marketPrice": "0.47",
+    "url": "https://cpt.tcgcsv.com/VTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "203",
+    "marketPrice": "1.16",
+    "url": "https://cpt.tcgcsv.com/WTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "203",
+    "marketPrice": "0.61",
+    "url": "https://cpt.tcgcsv.com/WTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "204",
+    "marketPrice": "0.4",
+    "url": "https://cpt.tcgcsv.com/XTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "204",
+    "marketPrice": "0.07",
+    "url": "https://cpt.tcgcsv.com/XTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "205",
+    "marketPrice": "0.05",
+    "url": "https://cpt.tcgcsv.com/ZTF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "205",
+    "marketPrice": "0.26",
+    "url": "https://cpt.tcgcsv.com/ZTF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "206",
+    "marketPrice": "1.37",
+    "url": "https://cpt.tcgcsv.com/-TF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "206",
+    "marketPrice": "0.13",
+    "url": "https://cpt.tcgcsv.com/-TF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "207",
+    "marketPrice": "0.17",
+    "url": "https://cpt.tcgcsv.com/_TF7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "207",
+    "marketPrice": "1.01",
+    "url": "https://cpt.tcgcsv.com/_TF7",
+    "subTypeName": "foil"
+  },
+  {
+    "set": 13,
+    "extNumber": "208",
+    "marketPrice": "4.61",
+    "url": "https://cpt.tcgcsv.com/0VF7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "209",
+    "marketPrice": "6.97",
+    "url": "https://cpt.tcgcsv.com/2VF7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "210",
+    "marketPrice": "13.59",
+    "url": "https://cpt.tcgcsv.com/3VF7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "211",
+    "marketPrice": "2.43",
+    "url": "https://cpt.tcgcsv.com/5VF7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "213",
+    "marketPrice": "1.87",
+    "url": "https://cpt.tcgcsv.com/6VF7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "214",
+    "marketPrice": "2.93",
+    "url": "https://cpt.tcgcsv.com/7VF7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "215",
+    "marketPrice": "4.02",
+    "url": "https://cpt.tcgcsv.com/8VF7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "216",
+    "marketPrice": "2.67",
+    "url": "https://cpt.tcgcsv.com/9VF7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "217",
+    "marketPrice": "2.73",
+    "url": "https://cpt.tcgcsv.com/bVF7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "218",
+    "marketPrice": "4.19",
+    "url": "https://cpt.tcgcsv.com/cVF7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "219",
+    "marketPrice": "4.4",
+    "url": "https://cpt.tcgcsv.com/dVF7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "220",
+    "marketPrice": "1.52",
+    "url": "https://cpt.tcgcsv.com/fVF7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "221",
+    "marketPrice": "2.22",
+    "url": "https://cpt.tcgcsv.com/gVF7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "222",
+    "marketPrice": "3.63",
+    "url": "https://cpt.tcgcsv.com/hVF7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "223",
+    "marketPrice": "2.61",
+    "url": "https://cpt.tcgcsv.com/jVF7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "224",
+    "marketPrice": "3.22",
+    "url": "https://cpt.tcgcsv.com/kVF7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "225",
+    "marketPrice": "2.32",
+    "url": "https://cpt.tcgcsv.com/lVF7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "226",
+    "marketPrice": "240.01",
+    "url": "https://cpt.tcgcsv.com/mVF7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "227",
+    "marketPrice": "188.67",
+    "url": "https://cpt.tcgcsv.com/nVF7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "228",
+    "marketPrice": "441.97",
+    "url": "https://cpt.tcgcsv.com/pVF7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "229",
+    "marketPrice": "294.34",
+    "url": "https://cpt.tcgcsv.com/qVF7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "230",
+    "marketPrice": "111.07",
+    "url": "https://cpt.tcgcsv.com/rVF7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "231",
+    "marketPrice": "133.01",
+    "url": "https://cpt.tcgcsv.com/sVF7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "232",
+    "marketPrice": "159.02",
+    "url": "https://cpt.tcgcsv.com/tVF7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "233",
+    "marketPrice": "266.99",
+    "url": "https://cpt.tcgcsv.com/vVF7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "234",
+    "marketPrice": "653.66",
+    "url": "https://cpt.tcgcsv.com/wVF7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "235",
+    "marketPrice": "193.95",
+    "url": "https://cpt.tcgcsv.com/xVF7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "236",
+    "marketPrice": "143.94",
+    "url": "https://cpt.tcgcsv.com/zVF7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "237",
+    "marketPrice": "127.17",
+    "url": "https://cpt.tcgcsv.com/BVF7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "238",
+    "marketPrice": "364.15",
+    "url": "https://cpt.tcgcsv.com/CVF7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "239",
+    "marketPrice": "353.55",
+    "url": "https://cpt.tcgcsv.com/DVF7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "240",
+    "marketPrice": "130.63",
+    "url": "https://cpt.tcgcsv.com/FVF7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "241",
+    "marketPrice": "154.67",
+    "url": "https://cpt.tcgcsv.com/GVF7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "242",
+    "marketPrice": "163.48",
+    "url": "https://cpt.tcgcsv.com/HVF7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "243",
+    "marketPrice": "149.87",
+    "url": "https://cpt.tcgcsv.com/JVF7",
+    "subTypeName": "Holofoil"
+  },
+  {
+    "set": 13,
+    "extNumber": "",
+    "marketPrice": "749.62",
+    "url": "https://cpt.tcgcsv.com/xnG7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "",
+    "marketPrice": "4.33",
+    "url": "https://cpt.tcgcsv.com/vXG7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "",
+    "marketPrice": "",
+    "url": "https://cpt.tcgcsv.com/wXG7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "",
+    "marketPrice": "",
+    "url": "https://cpt.tcgcsv.com/xXG7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "",
+    "marketPrice": "",
+    "url": "https://cpt.tcgcsv.com/zXG7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "",
+    "marketPrice": "",
+    "url": "https://cpt.tcgcsv.com/BXG7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "",
+    "marketPrice": "",
+    "url": "https://cpt.tcgcsv.com/CXG7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "",
+    "marketPrice": "",
+    "url": "https://cpt.tcgcsv.com/DXG7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "",
+    "marketPrice": "",
+    "url": "https://cpt.tcgcsv.com/FXG7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "",
+    "marketPrice": "",
+    "url": "https://cpt.tcgcsv.com/GXG7",
+    "subTypeName": "Normal"
+  },
+  {
+    "set": 13,
+    "extNumber": "",
+    "marketPrice": "",
+    "url": "https://cpt.tcgcsv.com/HXG7",
+    "subTypeName": "Normal"
+  },
+  {
     "set": 4,
     "extNumber": "4/special",
     "marketPrice": "",
