@@ -22,6 +22,7 @@ SET_MAP = {
     "24414": 10,
     "24500": 11,
     "24617": 12,
+    "24666": 13,
 }
 
 URLS = [
@@ -37,6 +38,7 @@ URLS = [
     "https://tcgcsv.com/tcgplayer/71/24414/ProductsAndPrices.csv",
     "https://tcgcsv.com/tcgplayer/71/24500/ProductsAndPrices.csv",
     "https://tcgcsv.com/tcgplayer/71/24617/ProductsAndPrices.csv",
+    "https://tcgcsv.com/tcgplayer/71/24666/ProductsAndPrices.csv",
 ]
 
 PROMO_URLS = [
