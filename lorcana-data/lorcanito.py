@@ -32,11 +32,12 @@ _NAME_TOKEN = re.compile(r"^[A-Z][A-Z0-9'’.\-]*[!?.,]?$")
 # Module-level state populated by load()
 _cards: list = []
 _index: dict = {}  # (set_code, number) -> card dict
+_set_names: dict = {}  # set_code -> display name (e.g. "Attack of the Vine!")
 
 
 def load(path: Optional[Path] = None) -> bool:
     """Load lorcanito.json into memory. Returns True on success."""
-    global _cards, _index
+    global _cards, _index, _set_names
 
     if path is None:
         path = _DEFAULT_PATH if _DEFAULT_PATH.exists() else _FALLBACK_PATH
@@ -48,14 +49,26 @@ def load(path: Optional[Path] = None) -> bool:
         _cards = json.load(f)
 
     _index = {}
+    _set_names = {}
     for card in _cards:
         set_info = card.get("set") or {}
         sc = _SET_CODE_MAP.get(set_info.get("code", ""))
         n = _card_number(card.get("number"))
         if sc and n is not None:
             _index[(sc, n)] = card
+        if sc and set_info.get("name"):
+            _set_names.setdefault(sc, set_info["name"])
 
     return True
+
+
+def set_name_for(set_code: str) -> Optional[str]:
+    """Display name for a set code, as published by tcg.online.
+
+    Lets consumers show "Attack of the Vine!" instead of inventing a label from
+    the short code, so a new set needs no client-side change.
+    """
+    return _set_names.get(set_code)
 
 
 def _card_number(number) -> Optional[int]:

@@ -31,6 +31,13 @@ _SET_CODES = {
 _NAMED_SET_NUMBERS = {"Q1": -1, "Q2": -2}
 _NAMED_SET_CODES = {"Q1": "quest1", "Q2": "quest2"}
 
+# Set display names come from tcg.online (see lorcanito.set_name_for), which
+# doesn't carry the Illumineer's Quest products — those are named here.
+_QUEST_SET_NAMES = {
+    "quest1": "Illumineer's Quest: Deep Trouble",
+    "quest2": "Illumineer's Quest: Palace Heist",
+}
+
 _TYPE_MAP = {
     "characters": "glimmer",
     "items": "item",
@@ -108,6 +115,18 @@ def _set_code(card_id: str) -> Optional[str]:
         return _SET_CODES.get(int(p[2]))
     except (ValueError, TypeError):
         return _NAMED_SET_CODES.get(p[2])
+
+
+def _set_name(set_code: Optional[str]) -> Optional[str]:
+    """Human-readable set name for a set code, or None if unknown.
+
+    tcg.online is inconsistent about apostrophes ("Archazia’s Island" but
+    "Ursula's Return"), so they're normalized to the straight form.
+    """
+    if not set_code:
+        return None
+    name = lorcanito.set_name_for(set_code) or _QUEST_SET_NAMES.get(set_code)
+    return name.replace("’", "'") if name else None
 
 
 def _dreamborn(card_id: str) -> str:
@@ -334,6 +353,7 @@ def merge(catalogs: dict) -> list:
                 "deck_building_id": en_card.get("deck_building_id"),
                 "set_code": set_code,
                 "set": set_code,
+                "set_name": _set_name(set_code),
                 "set_number": _set_number(card_id),
                 "card_sets": en_card.get("card_sets", []),
                 "type": _TYPE_MAP.get(card_type, card_type),

@@ -24,6 +24,7 @@ NEW_ONLY_FIELDS = {
     "card_identifier", "deck_building_id", "card_sets", "special_rarity_id",
     "lore", "additional_info", "subtypes", "searchable_keywords",
     "set_rotation_state", "name", "subtitle", "flavor_text", "rules_text",
+    "set_name",
 }
 
 # Fields that exist only in the original output
