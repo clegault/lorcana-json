@@ -9,37 +9,9 @@ from datetime import date
 from io import StringIO
 from pathlib import Path
 
-SET_MAP = {
-    "22937": 1,
-    "23303": 2,
-    "23367": 3,
-    "23474": 4,
-    "23536": 5,
-    "23746": 6,
-    "24011": 7,
-    "24258": 8,
-    "24348": 9,
-    "24414": 10,
-    "24500": 11,
-    "24617": 12,
-    "24666": 13,
-}
-
-URLS = [
-    "https://tcgcsv.com/tcgplayer/71/22937/ProductsAndPrices.csv",
-    "https://tcgcsv.com/tcgplayer/71/23303/ProductsAndPrices.csv",
-    "https://tcgcsv.com/tcgplayer/71/23367/ProductsAndPrices.csv",
-    "https://tcgcsv.com/tcgplayer/71/23474/ProductsAndPrices.csv",
-    "https://tcgcsv.com/tcgplayer/71/23536/ProductsAndPrices.csv",
-    "https://tcgcsv.com/tcgplayer/71/23746/ProductsAndPrices.csv",
-    "https://tcgcsv.com/tcgplayer/71/24011/ProductsAndPrices.csv",
-    "https://tcgcsv.com/tcgplayer/71/24258/ProductsAndPrices.csv",
-    "https://tcgcsv.com/tcgplayer/71/24348/ProductsAndPrices.csv",
-    "https://tcgcsv.com/tcgplayer/71/24414/ProductsAndPrices.csv",
-    "https://tcgcsv.com/tcgplayer/71/24500/ProductsAndPrices.csv",
-    "https://tcgcsv.com/tcgplayer/71/24617/ProductsAndPrices.csv",
-    "https://tcgcsv.com/tcgplayer/71/24666/ProductsAndPrices.csv",
-]
+GROUPS_URL = "https://tcgcsv.com/tcgplayer/71/groups"
+PRICES_URL = "https://tcgcsv.com/tcgplayer/71/{group_id}/ProductsAndPrices.csv"
+USER_AGENT = "LorScana/1.0.0"
 
 PROMO_URLS = [
     "https://tcgcsv.com/tcgplayer/71/17690/ProductsAndPrices.csv",
@@ -52,11 +24,24 @@ PROMO_RARITIES = {"challenge24", "special", "top1"}
 KEEP_FIELDS = {"extNumber", "marketPrice", "url", "subTypeName"}
 
 
-def get_set_id(url: str) -> int:
-    match = re.search(r"/(\d+)/ProductsAndPrices\.csv", url)
-    if match:
-        return SET_MAP.get(match.group(1), 0)
-    return 0
+def load_set_groups() -> dict[str, int]:
+    """Map TCGplayer group id -> set number for every main Lorcana set.
+
+    Main sets carry their set number as the group abbreviation ("1" ... "14");
+    promos (D23, DLPC, D100) and Illumineer's Quests (Q1...) don't, and are
+    skipped. New sets are picked up as soon as tcgcsv lists them.
+    """
+    req = urllib.request.Request(GROUPS_URL, headers={"User-Agent": USER_AGENT})
+    with urllib.request.urlopen(req) as response:
+        groups = json.load(response)["results"]
+    set_groups = {
+        str(g["groupId"]): int(g["abbreviation"])
+        for g in groups
+        if str(g.get("abbreviation", "")).isdigit()
+    }
+    if not set_groups:
+        raise RuntimeError(f"No Lorcana sets found at {GROUPS_URL}")
+    return dict(sorted(set_groups.items(), key=lambda kv: kv[1]))
 
 
 CARDS_FILE = Path(__file__).parent / "lorcana_cards_update.json.zip"
@@ -253,15 +238,14 @@ def clean_subtype(value: str) -> str:
 
 def fetch_csv(url: str) -> list[dict]:
     print(f"Downloading {url} ...")
-    req = urllib.request.Request(url, headers={"User-Agent": "LorScana/1.0.0"})
+    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     with urllib.request.urlopen(req) as response:
         content = response.read().decode("utf-8")
     reader = csv.DictReader(StringIO(content))
     return list(reader)
 
 
-def process_url(url: str) -> list[dict]:
-    set_num = get_set_id(url)
+def process_url(url: str, set_num: int) -> list[dict]:
     rows = fetch_csv(url)
     results = []
     for row in rows:
@@ -306,8 +290,10 @@ def process_promo_url(
 
 def main():
     all_records = []
-    for url in URLS:
-        records = process_url(url)
+    set_groups = load_set_groups()
+    print(f"Found sets 1-{max(set_groups.values())} on tcgcsv")
+    for group_id, set_num in set_groups.items():
+        records = process_url(PRICES_URL.format(group_id=group_id), set_num)
         all_records.extend(records)
         print(f"  -> {len(records)} rows")
 

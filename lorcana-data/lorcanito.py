@@ -15,12 +15,9 @@ from typing import Optional
 _DEFAULT_PATH = Path(__file__).resolve().parent / "lorcanito.json"
 _FALLBACK_PATH = Path(__file__).resolve().parent.parent / "library" / "merge_catalog" / "lorcanito.json"
 
-# Maps tcg.online set codes → our internal set codes
-_SET_CODE_MAP = {
-    "TFC": "tfc", "ROF": "rotf", "ITI": "iti", "URR": "urr", "SSK": "ssk",
-    "AZS": "azu", "ARC": "arc", "ROJ": "roj", "FAB": "fab",
-    "WIW": "whi", "WSP": "win", "WUN": "wun", "013": "aov",
-}
+# tcg.online card ids look like "set13-017" / "set8-p2-029-promo"; the leading
+# number is the Ravensburger set number, so new sets index without a code table.
+_SET_ID = re.compile(r"^set(\d+)-")
 
 _LANG_TEMPLATE = {"en": None, "fr": None, "de": None, "it": None, "es": None, "zh": None, "ja": None}
 
@@ -31,8 +28,8 @@ _NAME_TOKEN = re.compile(r"^[A-Z][A-Z0-9'’.\-]*[!?.,]?$")
 
 # Module-level state populated by load()
 _cards: list = []
-_index: dict = {}  # (set_code, number) -> card dict
-_set_names: dict = {}  # set_code -> display name (e.g. "Attack of the Vine!")
+_index: dict = {}  # (set_number, number) -> card dict
+_set_names: dict = {}  # set_number -> display name (e.g. "Attack of the Vine!")
 
 
 def load(path: Optional[Path] = None) -> bool:
@@ -52,23 +49,24 @@ def load(path: Optional[Path] = None) -> bool:
     _set_names = {}
     for card in _cards:
         set_info = card.get("set") or {}
-        sc = _SET_CODE_MAP.get(set_info.get("code", ""))
+        m = _SET_ID.match(card.get("id") or "")
+        sn = int(m.group(1)) if m else None
         n = _card_number(card.get("number"))
-        if sc and n is not None:
-            _index[(sc, n)] = card
-        if sc and set_info.get("name"):
-            _set_names.setdefault(sc, set_info["name"])
+        if sn and n is not None:
+            _index[(sn, n)] = card
+        if sn and set_info.get("name"):
+            _set_names.setdefault(sn, set_info["name"])
 
     return True
 
 
-def set_name_for(set_code: str) -> Optional[str]:
-    """Display name for a set code, as published by tcg.online.
+def set_name_for(set_number: int) -> Optional[str]:
+    """Display name for a set number, as published by tcg.online.
 
     Lets consumers show "Attack of the Vine!" instead of inventing a label from
     the short code, so a new set needs no client-side change.
     """
-    return _set_names.get(set_code)
+    return _set_names.get(set_number)
 
 
 def _card_number(number) -> Optional[int]:
@@ -144,9 +142,9 @@ def _map_abilities(card: dict) -> list:
     return result
 
 
-def abilities_for(set_code: str, number: int) -> list:
+def abilities_for(set_number: int, number: int) -> list:
     """Return the mapped ability list for a card, or [] if not found."""
-    card = _index.get((set_code, number))
+    card = _index.get((set_number, number))
     if not card:
         return []
     return _map_abilities(card)

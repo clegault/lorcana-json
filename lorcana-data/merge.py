@@ -11,6 +11,8 @@ DOWNLOAD_LANGUAGES = ["en", "de", "fr", "it"]
 # All languages included in the merged output — zh/ja come from cached files
 LANGUAGES = ["en", "de", "fr", "it", "zh", "ja"]
 
+# Codes already published for sets 1-13; they predate the automatic scheme and
+# must not change. Later sets get a code derived from their name (see _set_code).
 _SET_CODES = {
     1: "tfc",
     2: "rotf",
@@ -27,16 +29,20 @@ _SET_CODES = {
     13: "aov",
 }
 
-# Non-numeric set parts from card_identifiers (e.g. "1/31 EN Q1")
-_NAMED_SET_NUMBERS = {"Q1": -1, "Q2": -2}
-_NAMED_SET_CODES = {"Q1": "quest1", "Q2": "quest2"}
+# Non-numeric set parts from card_identifiers (e.g. "1/31 EN Q1") are
+# Illumineer's Quest products: "Qn" -> set_number -n, set_code "questn".
+_QUEST_PART = re.compile(r"^Q(\d+)$")
 
-# Set display names come from tcg.online (see lorcanito.set_name_for), which
-# doesn't carry the Illumineer's Quest products — those are named here.
+# Set display names come from tcg.online (see lorcanito.set_name_for), falling
+# back to the Ravensburger catalog's card_sets. These quests keep the names they
+# were first published with; later quests are named from card_sets.
 _QUEST_SET_NAMES = {
     "quest1": "Illumineer's Quest: Deep Trouble",
     "quest2": "Illumineer's Quest: Palace Heist",
 }
+
+# Ravensburger card_sets id ("set14", "quest3") -> name; filled by merge()
+_catalog_set_names: dict = {}
 
 _TYPE_MAP = {
     "characters": "glimmer",
@@ -104,28 +110,52 @@ def _set_number(card_id: str) -> Optional[int]:
     try:
         return int(p[2])
     except (ValueError, TypeError):
-        return _NAMED_SET_NUMBERS.get(p[2])
+        m = _QUEST_PART.match(p[2])
+        return -int(m.group(1)) if m else None
+
+
+def _derived_set_code(set_number: int) -> str:
+    """Code for a set without a fixed one: the initials of its name.
+
+    "Hyperia City" -> "hc", matching how "aov" came from "Attack of the Vine!".
+    Falls back to "set14"-style if the name is unknown or the initials clash
+    with an existing code.
+    """
+    name = _catalog_set_names.get(f"set{set_number}", "")
+    code = "".join(w[0] for w in re.findall(r"[A-Za-z0-9]+", name)).lower()
+    if not code or code in _SET_CODES.values():
+        code = f"set{set_number}"
+    return code
 
 
 def _set_code(card_id: str) -> Optional[str]:
-    p = _parse_card_id(card_id)
-    if not p:
+    sn = _set_number(card_id)
+    if sn is None:
         return None
-    try:
-        return _SET_CODES.get(int(p[2]))
-    except (ValueError, TypeError):
-        return _NAMED_SET_CODES.get(p[2])
+    if sn < 0:
+        return f"quest{-sn}"
+    return _SET_CODES.get(sn) or _derived_set_code(sn)
 
 
-def _set_name(set_code: Optional[str]) -> Optional[str]:
-    """Human-readable set name for a set code, or None if unknown.
+def _set_name(set_number: Optional[int]) -> Optional[str]:
+    """Human-readable set name for a set number, or None if unknown.
 
     tcg.online is inconsistent about apostrophes ("Archazia’s Island" but
     "Ursula's Return"), so they're normalized to the straight form.
     """
-    if not set_code:
+    if not set_number:
         return None
-    name = lorcanito.set_name_for(set_code) or _QUEST_SET_NAMES.get(set_code)
+    if set_number < 0:
+        code = f"quest{-set_number}"
+        name = _QUEST_SET_NAMES.get(code)
+        if not name and code in _catalog_set_names:
+            # card_sets says "Hunny Rescue – Illumineer’s Quest"
+            title = re.split(r"\s+[–-]\s+", _catalog_set_names[code])[0]
+            name = f"Illumineer's Quest: {title}"
+    else:
+        name = lorcanito.set_name_for(set_number) or _catalog_set_names.get(
+            f"set{set_number}"
+        )
     return name.replace("’", "'") if name else None
 
 
@@ -294,6 +324,10 @@ def _iter_cards(catalog: dict):
 def merge(catalogs: dict) -> list:
     """Return a flat list of merged cards keyed from the EN catalog."""
     en_catalog = catalogs.get("en", {})
+    _catalog_set_names.clear()
+    for s in en_catalog.get("card_sets") or []:
+        if s.get("id") and s.get("name"):
+            _catalog_set_names[s["id"]] = s["name"]
 
     # Index: culture_invariant_id -> {lang: card}
     lang_index: dict = {}
@@ -335,9 +369,12 @@ def merge(catalogs: dict) -> list:
         rarity_raw = en_card.get("rarity", "")
         card_id = en_card["card_identifier"]
         set_code = _set_code(card_id)
+        set_number = _set_number(card_id)
         number = _card_number(card_id)
         abilities = (
-            lorcanito.abilities_for(set_code, number) if set_code and number else []
+            lorcanito.abilities_for(set_number, number)
+            if set_number and set_number > 0 and number
+            else []
         )
 
         dreamborn = _dreamborn(card_id)
@@ -353,8 +390,8 @@ def merge(catalogs: dict) -> list:
                 "deck_building_id": en_card.get("deck_building_id"),
                 "set_code": set_code,
                 "set": set_code,
-                "set_name": _set_name(set_code),
-                "set_number": _set_number(card_id),
+                "set_name": _set_name(set_number),
+                "set_number": set_number,
                 "card_sets": en_card.get("card_sets", []),
                 "type": _TYPE_MAP.get(card_type, card_type),
                 "rarity": _RARITY_MAP.get(rarity_raw, rarity_raw.lower()),

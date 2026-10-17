@@ -1,9 +1,10 @@
-name: Monthly Cards Update
+name: Daily Cards Update
 
 on:
   schedule:
-    # Runs at 02:00 UTC on the 1st of every month
-    - cron: "0 2 1 * *"
+    # Runs at 19:45 UTC every day, ahead of the 20:15 price update so new
+    # cards are in the zip that getprices.py matches promos against
+    - cron: "45 19 * * *"
   workflow_dispatch: # Allows manual triggering for testing
 
 jobs:
@@ -30,28 +31,29 @@ jobs:
           .venv/bin/pip install -r lorcana-data/requirements.txt
 
       - name: Run main.py
-        run: .venv/bin/python lorcana-data/main.py
+        # --refresh-lorcanito pulls current abilities so new sets aren't blank
+        run: .venv/bin/python lorcana-data/main.py --refresh-lorcanito
 
-      - name: Replace old zip and bump version
+      - name: Bump version and commit if cards changed
         run: |
-          # Remove the old .json.zip artifact if it still exists
-          rm -f lorcana_cards_update.json.zip
+          # main.py leaves the zip untouched when the card data is identical
+          if git diff --quiet -- lorcana_cards_update.json.zip; then
+            echo "Cards unchanged; nothing to commit"
+            exit 0
+          fi
 
-          # Bump the version number in lorcana_cards_version
-          python - <<'EOF'
+          python - <<'PY'
           import json, pathlib
           p = pathlib.Path("lorcana_cards_version")
           data = json.loads(p.read_text())
           data["version"] += 1
           p.write_text(json.dumps(data, indent=4) + "\n")
           print(f"Version bumped to {data['version']}")
-          EOF
+          PY
 
-      - name: Commit and push changes
-        run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add lorcana_cards_update.zip lorcana_cards_update.json lorcana_cards_version
-          git rm --cached lorcana_cards_update.json.zip 2>/dev/null || true
-          git commit -m "Auto-update cards: $(date -u +'%a %b %e %T UTC %Y')" || echo "No changes to commit"
+          git add lorcana_cards_update.json.zip lorcana_cards_version lorcana-data/lorcanito.json
+          git commit -m "Auto-update cards: $(date -u +'%a %b %e %T UTC %Y')"
+          git pull --rebase
           git push

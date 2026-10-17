@@ -131,7 +131,18 @@ def main() -> int:
         json.dump(cards, f, indent=2, ensure_ascii=True)
     print(f"Wrote {out_path.relative_to(ROOT)}")
 
+    # Leave the zip untouched when the cards haven't changed, so the workflow
+    # only bumps lorcana_cards_version (and the app only re-downloads) on a real
+    # update. Re-zipping identical data would still change the archive bytes.
     zip_path = out_path.with_name(out_path.name + ".zip")
+    if zip_path.exists():
+        try:
+            with zipfile.ZipFile(zip_path) as zf:
+                if zf.read(out_path.name) == out_path.read_bytes():
+                    print(f"{zip_path.relative_to(ROOT)} unchanged")
+                    return 0
+        except (zipfile.BadZipFile, KeyError):
+            pass  # unreadable (e.g. an LFS pointer) -> rewrite it
     with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
         zf.write(out_path, out_path.name)
     print(f"Wrote {zip_path.relative_to(ROOT)}")
