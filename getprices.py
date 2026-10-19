@@ -236,6 +236,21 @@ def clean_subtype(value: str) -> str:
     return re.sub(r"\bcold foil\b", "foil", value, flags=re.IGNORECASE).strip()
 
 
+def best_price(row: dict) -> str:
+    """Market price, falling back to listing prices when it's blank.
+
+    TCGplayer only sets marketPrice once a product has recent sales, so
+    newly released cards (e.g. a set's Enchanteds in launch week) come
+    through with it empty even though they're listed. The app drops entries
+    without a price, so use the mid (median listing) or low price instead.
+    """
+    for field in ("marketPrice", "midPrice", "lowPrice"):
+        value = (row.get(field) or "").strip()
+        if value:
+            return value
+    return ""
+
+
 def fetch_csv(url: str) -> list[dict]:
     print(f"Downloading {url} ...")
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
@@ -252,7 +267,7 @@ def process_url(url: str, set_num: int) -> list[dict]:
         record = {
             "set": set_num,
             "extNumber": clean_ext_number(row.get("extNumber", "")),
-            "marketPrice": row.get("marketPrice", ""),
+            "marketPrice": best_price(row),
             "url": row.get("url", ""),
             "subTypeName": clean_subtype(row.get("subTypeName", "")),
         }
@@ -278,7 +293,7 @@ def process_promo_url(
         record = {
             "set": set_num,
             "extNumber": ext_number,
-            "marketPrice": row.get("marketPrice", ""),
+            "marketPrice": best_price(row),
             "url": row.get("url", ""),
             "subTypeName": clean_subtype(row.get("subTypeName", "")),
         }

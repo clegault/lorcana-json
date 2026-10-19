@@ -12469,7 +12469,7 @@
   {
     "set": 4,
     "extNumber": "",
-    "marketPrice": "",
+    "marketPrice": "0.15",
     "url": "https://cpt.tcgcsv.com/kvG7",
     "subTypeName": "Normal"
   },
@@ -21898,7 +21898,7 @@
   {
     "set": 7,
     "extNumber": "",
-    "marketPrice": "",
+    "marketPrice": "0.24",
     "url": "https://cpt.tcgcsv.com/RnJ7",
     "subTypeName": "Normal"
   },
@@ -35254,7 +35254,7 @@
   {
     "set": 11,
     "extNumber": "",
-    "marketPrice": "",
+    "marketPrice": "0.2",
     "url": "https://cpt.tcgcsv.com/KNG7",
     "subTypeName": "Normal"
   },
@@ -42044,7 +42044,7 @@
   {
     "set": 14,
     "extNumber": "6",
-    "marketPrice": "",
+    "marketPrice": "1.55",
     "url": "https://cpt.tcgcsv.com/8ZN7",
     "subTypeName": "foil"
   },
@@ -42429,7 +42429,7 @@
   {
     "set": 14,
     "extNumber": "33",
-    "marketPrice": "",
+    "marketPrice": "0.9",
     "url": "https://cpt.tcgcsv.com/HZN7",
     "subTypeName": "foil"
   },
@@ -42695,7 +42695,7 @@
   {
     "set": 14,
     "extNumber": "52",
-    "marketPrice": "",
+    "marketPrice": "3.28",
     "url": "https://cpt.tcgcsv.com/3-N7",
     "subTypeName": "foil"
   },
@@ -42891,7 +42891,7 @@
   {
     "set": 14,
     "extNumber": "66",
-    "marketPrice": "",
+    "marketPrice": "1.39",
     "url": "https://cpt.tcgcsv.com/l-N7",
     "subTypeName": "foil"
   },
@@ -43031,7 +43031,7 @@
   {
     "set": 14,
     "extNumber": "76",
-    "marketPrice": "",
+    "marketPrice": "1.15",
     "url": "https://cpt.tcgcsv.com/x-N7",
     "subTypeName": "foil"
   },
@@ -43157,14 +43157,14 @@
   {
     "set": 14,
     "extNumber": "85",
-    "marketPrice": "",
+    "marketPrice": "0.5",
     "url": "https://cpt.tcgcsv.com/K-N7",
     "subTypeName": "foil"
   },
   {
     "set": 14,
     "extNumber": "86",
-    "marketPrice": "",
+    "marketPrice": "1.0",
     "url": "https://cpt.tcgcsv.com/L-N7",
     "subTypeName": "foil"
   },
@@ -43353,7 +43353,7 @@
   {
     "set": 14,
     "extNumber": "99",
-    "marketPrice": "",
+    "marketPrice": "2.31",
     "url": "https://cpt.tcgcsv.com/_-N7",
     "subTypeName": "foil"
   },
@@ -43423,7 +43423,7 @@
   {
     "set": 14,
     "extNumber": "104",
-    "marketPrice": "",
+    "marketPrice": "0.74",
     "url": "https://cpt.tcgcsv.com/6_N7",
     "subTypeName": "foil"
   },
@@ -43458,7 +43458,7 @@
   {
     "set": 14,
     "extNumber": "107",
-    "marketPrice": "",
+    "marketPrice": "1.07",
     "url": "https://cpt.tcgcsv.com/9_N7",
     "subTypeName": "foil"
   },
@@ -43500,7 +43500,7 @@
   {
     "set": 14,
     "extNumber": "110",
-    "marketPrice": "",
+    "marketPrice": "1.0",
     "url": "https://cpt.tcgcsv.com/d_N7",
     "subTypeName": "foil"
   },
@@ -43528,7 +43528,7 @@
   {
     "set": 14,
     "extNumber": "112",
-    "marketPrice": "",
+    "marketPrice": "0.95",
     "url": "https://cpt.tcgcsv.com/g_N7",
     "subTypeName": "foil"
   },
@@ -43556,7 +43556,7 @@
   {
     "set": 14,
     "extNumber": "114",
-    "marketPrice": "",
+    "marketPrice": "1.68",
     "url": "https://cpt.tcgcsv.com/j_N7",
     "subTypeName": "foil"
   },
@@ -43570,7 +43570,7 @@
   {
     "set": 14,
     "extNumber": "115",
-    "marketPrice": "",
+    "marketPrice": "0.75",
     "url": "https://cpt.tcgcsv.com/k_N7",
     "subTypeName": "foil"
   },
@@ -43773,7 +43773,7 @@
   {
     "set": 14,
     "extNumber": "129",
-    "marketPrice": "",
+    "marketPrice": "1.35",
     "url": "https://cpt.tcgcsv.com/C_N7",
     "subTypeName": "foil"
   },
@@ -43843,7 +43843,7 @@
   {
     "set": 14,
     "extNumber": "134",
-    "marketPrice": "",
+    "marketPrice": "1.1",
     "url": "https://cpt.tcgcsv.com/J_N7",
     "subTypeName": "foil"
   },
@@ -43885,14 +43885,14 @@
   {
     "set": 14,
     "extNumber": "137",
-    "marketPrice": "",
+    "marketPrice": "1.48",
     "url": "https://cpt.tcgcsv.com/M_N7",
     "subTypeName": "foil"
   },
   {
     "set": 14,
     "extNumber": "138",
-    "marketPrice": "",
+    "marketPrice": "2.35",
     "url": "https://cpt.tcgcsv.com/N_N7",
     "subTypeName": "foil"
   },
@@ -43906,7 +43906,7 @@
   {
     "set": 14,
     "extNumber": "139",
-    "marketPrice": "",
+    "marketPrice": "1.44",
     "url": "https://cpt.tcgcsv.com/P_N7",
     "subTypeName": "foil"
   },
@@ -43920,7 +43920,7 @@
   {
     "set": 14,
     "extNumber": "140",
-    "marketPrice": "",
+    "marketPrice": "1.0",
     "url": "https://cpt.tcgcsv.com/Q_N7",
     "subTypeName": "foil"
   },
@@ -43941,7 +43941,7 @@
   {
     "set": 14,
     "extNumber": "141",
-    "marketPrice": "",
+    "marketPrice": "1.0",
     "url": "https://cpt.tcgcsv.com/R_N7",
     "subTypeName": "foil"
   },
@@ -43997,7 +43997,7 @@
   {
     "set": 14,
     "extNumber": "145",
-    "marketPrice": "",
+    "marketPrice": "0.97",
     "url": "https://cpt.tcgcsv.com/W_N7",
     "subTypeName": "foil"
   },
@@ -44060,7 +44060,7 @@
   {
     "set": 14,
     "extNumber": "150",
-    "marketPrice": "",
+    "marketPrice": "1.95",
     "url": "https://cpt.tcgcsv.com/00P7",
     "subTypeName": "foil"
   },
@@ -44074,7 +44074,7 @@
   {
     "set": 14,
     "extNumber": "151",
-    "marketPrice": "",
+    "marketPrice": "0.84",
     "url": "https://cpt.tcgcsv.com/20P7",
     "subTypeName": "foil"
   },
@@ -44291,7 +44291,7 @@
   {
     "set": 14,
     "extNumber": "166",
-    "marketPrice": "",
+    "marketPrice": "1.45",
     "url": "https://cpt.tcgcsv.com/l0P7",
     "subTypeName": "foil"
   },
@@ -44333,7 +44333,7 @@
   {
     "set": 14,
     "extNumber": "169",
-    "marketPrice": "",
+    "marketPrice": "1.49",
     "url": "https://cpt.tcgcsv.com/p0P7",
     "subTypeName": "foil"
   },
@@ -44417,14 +44417,14 @@
   {
     "set": 14,
     "extNumber": "175",
-    "marketPrice": "",
+    "marketPrice": "5.4",
     "url": "https://cpt.tcgcsv.com/w0P7",
     "subTypeName": "foil"
   },
   {
     "set": 14,
     "extNumber": "176",
-    "marketPrice": "",
+    "marketPrice": "0.45",
     "url": "https://cpt.tcgcsv.com/x0P7",
     "subTypeName": "foil"
   },
@@ -44543,7 +44543,7 @@
   {
     "set": 14,
     "extNumber": "184",
-    "marketPrice": "",
+    "marketPrice": "1.25",
     "url": "https://cpt.tcgcsv.com/J0P7",
     "subTypeName": "foil"
   },
@@ -44620,7 +44620,7 @@
   {
     "set": 14,
     "extNumber": "190",
-    "marketPrice": "",
+    "marketPrice": "0.97",
     "url": "https://cpt.tcgcsv.com/Q0P7",
     "subTypeName": "foil"
   },
@@ -44634,7 +44634,7 @@
   {
     "set": 14,
     "extNumber": "191",
-    "marketPrice": "",
+    "marketPrice": "0.93",
     "url": "https://cpt.tcgcsv.com/R0P7",
     "subTypeName": "foil"
   },
@@ -44795,7 +44795,7 @@
   {
     "set": 14,
     "extNumber": "202",
-    "marketPrice": "",
+    "marketPrice": "1.1",
     "url": "https://cpt.tcgcsv.com/32P7",
     "subTypeName": "foil"
   },
@@ -44956,7 +44956,7 @@
   {
     "set": 14,
     "extNumber": "223",
-    "marketPrice": "",
+    "marketPrice": "340.5",
     "url": "https://cpt.tcgcsv.com/t2P7",
     "subTypeName": "Holofoil"
   },
@@ -44977,7 +44977,7 @@
   {
     "set": 14,
     "extNumber": "226",
-    "marketPrice": "",
+    "marketPrice": "330.99",
     "url": "https://cpt.tcgcsv.com/x2P7",
     "subTypeName": "Holofoil"
   },
@@ -44991,7 +44991,7 @@
   {
     "set": 14,
     "extNumber": "228",
-    "marketPrice": "",
+    "marketPrice": "134.23",
     "url": "https://cpt.tcgcsv.com/B2P7",
     "subTypeName": "Holofoil"
   },
@@ -45005,14 +45005,14 @@
   {
     "set": 14,
     "extNumber": "230",
-    "marketPrice": "",
+    "marketPrice": "394.5",
     "url": "https://cpt.tcgcsv.com/D2P7",
     "subTypeName": "Holofoil"
   },
   {
     "set": 14,
     "extNumber": "231",
-    "marketPrice": "",
+    "marketPrice": "145.0",
     "url": "https://cpt.tcgcsv.com/F2P7",
     "subTypeName": "Holofoil"
   },
@@ -45026,14 +45026,14 @@
   {
     "set": 14,
     "extNumber": "233",
-    "marketPrice": "",
+    "marketPrice": "150.0",
     "url": "https://cpt.tcgcsv.com/H2P7",
     "subTypeName": "Holofoil"
   },
   {
     "set": 14,
     "extNumber": "234",
-    "marketPrice": "",
+    "marketPrice": "220.0",
     "url": "https://cpt.tcgcsv.com/J2P7",
     "subTypeName": "Holofoil"
   },
@@ -45054,7 +45054,7 @@
   {
     "set": 14,
     "extNumber": "237",
-    "marketPrice": "",
+    "marketPrice": "214.0",
     "url": "https://cpt.tcgcsv.com/M2P7",
     "subTypeName": "Holofoil"
   },
@@ -45075,14 +45075,14 @@
   {
     "set": 14,
     "extNumber": "240",
-    "marketPrice": "",
+    "marketPrice": "148.2",
     "url": "https://cpt.tcgcsv.com/Q2P7",
     "subTypeName": "Holofoil"
   },
   {
     "set": 14,
     "extNumber": "241",
-    "marketPrice": "",
+    "marketPrice": "4499.97",
     "url": "https://cpt.tcgcsv.com/R2P7",
     "subTypeName": "Holofoil"
   },
@@ -45110,70 +45110,70 @@
   {
     "set": 14,
     "extNumber": "",
-    "marketPrice": "",
+    "marketPrice": "5.0",
     "url": "https://cpt.tcgcsv.com/ktP7",
     "subTypeName": "Normal"
   },
   {
     "set": 14,
     "extNumber": "",
-    "marketPrice": "",
+    "marketPrice": "0.05",
     "url": "https://cpt.tcgcsv.com/fLP7",
     "subTypeName": "Normal"
   },
   {
     "set": 14,
     "extNumber": "",
-    "marketPrice": "",
+    "marketPrice": "4.0",
     "url": "https://cpt.tcgcsv.com/gLP7",
     "subTypeName": "Normal"
   },
   {
     "set": 14,
     "extNumber": "",
-    "marketPrice": "",
+    "marketPrice": "0.05",
     "url": "https://cpt.tcgcsv.com/hLP7",
     "subTypeName": "Normal"
   },
   {
     "set": 14,
     "extNumber": "",
-    "marketPrice": "",
+    "marketPrice": "0.05",
     "url": "https://cpt.tcgcsv.com/jLP7",
     "subTypeName": "Normal"
   },
   {
     "set": 14,
     "extNumber": "",
-    "marketPrice": "",
+    "marketPrice": "0.05",
     "url": "https://cpt.tcgcsv.com/kLP7",
     "subTypeName": "Normal"
   },
   {
     "set": 14,
     "extNumber": "",
-    "marketPrice": "",
+    "marketPrice": "0.04",
     "url": "https://cpt.tcgcsv.com/lLP7",
     "subTypeName": "Normal"
   },
   {
     "set": 14,
     "extNumber": "",
-    "marketPrice": "",
+    "marketPrice": "0.04",
     "url": "https://cpt.tcgcsv.com/mLP7",
     "subTypeName": "Normal"
   },
   {
     "set": 14,
     "extNumber": "",
-    "marketPrice": "",
+    "marketPrice": "0.05",
     "url": "https://cpt.tcgcsv.com/nLP7",
     "subTypeName": "Normal"
   },
   {
     "set": 14,
     "extNumber": "",
-    "marketPrice": "",
+    "marketPrice": "0.05",
     "url": "https://cpt.tcgcsv.com/pLP7",
     "subTypeName": "Normal"
   },
@@ -45660,7 +45660,7 @@
   {
     "set": 1,
     "extNumber": "1/special",
-    "marketPrice": "",
+    "marketPrice": "200000.0",
     "url": "https://cpt.tcgcsv.com/BSr6",
     "subTypeName": "Holofoil",
     "promoCode": "P1"
